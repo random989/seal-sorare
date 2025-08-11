@@ -95,7 +95,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
   return (
     <>
-      <style jsx>{`
+      <style jsx global>{`
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
           margin: 0;
@@ -388,9 +388,9 @@ export default function SorarePlayerSealData({ sealData }) {
                 <td><strong>{player.name}</strong></td>
                 <td>{getSealBadge(player.seal)}</td>
                 <td>
-                  {player.seal_changed && player.previous_seal && (
+                  {player.seal_changed && player.previous_seal ? (
                     <span className="previous-seal">{getSealBadge(player.previous_seal)}</span>
-                  )}
+                  ) : null}
                 </td>
                 <td className="price">{formatPrice(player.price_limited_eur)}</td>
                 <td className="price">{formatPrice(player.price_rare_eur)}</td>
