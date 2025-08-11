@@ -312,8 +312,8 @@
         async function fetchSealData() {
             try {
                 // Replace 'seal_data.json' with your actual JSON file URL
-                const jsonURL = 'https://raw.githubusercontent.com/random989/seal-sorare/main/seal_data.json';
-                const response = await fetch(jsonURL + '?t=' + new Date().getTime());
+                const response = await fetch('/api/seal-data');
+
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
