@@ -12,13 +12,13 @@ export async function getStaticProps() {
     props: {
       sealData,
     },
-    revalidate: 3600, // Revalidate every hour if there are new requests
+    revalidate: 3600, 
   };
 }
 
 export default function SorarePlayerSealData({ sealData }) {
   const [filters, setFilters] = useState({
-    seal: '50',
+    seal: '200',
     changed: 'all',
     orderBy: 'limited',
     direction: 'asc',
@@ -301,7 +301,7 @@ export default function SorarePlayerSealData({ sealData }) {
         <div className="toolbar">
           {/* Search */}
           <div className="filter-item">
-            <label>Search Player:</label>
+            <label>Search Player</label>
             <input 
               type="text" 
               placeholder="Enter player name..."
@@ -312,7 +312,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
           {/* Seal Points Filter */}
           <div className="filter-item">
-            <label>Seal Points:</label>
+            <label>Seal Points</label>
             <div className="filter-group">
               <button 
                 className={filters.seal === '50' ? 'active' : ''}
@@ -327,7 +327,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
           {/* Changed Only Filter */}
           <div className="filter-item">
-            <label>Show:</label>
+            <label>Show</label>
             <div className="filter-group">
               <button 
                 className={filters.changed === 'all' ? 'active' : ''}
@@ -342,7 +342,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
           {/* Order By */}
           <div className="filter-item">
-            <label>Order By:</label>
+            <label>Order By</label>
             <div className="filter-group">
               <button 
                 className={filters.orderBy === 'limited' ? 'active' : ''}
@@ -357,7 +357,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
           {/* Sort Direction */}
           <div className="filter-item">
-            <label>Sort:</label>
+            <label>Sort</label>
             <div className="filter-group">
               <button 
                 className={filters.direction === 'asc' ? 'active' : ''}
