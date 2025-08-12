@@ -85,13 +85,13 @@ export default function SorarePlayerSealData({ sealData }) {
     if (!sealValue && sealValue !== 0) return '';
     return <span className={`seal-badge seal-${sealValue}`}>{sealValue}</span>;
   };
-
+  /*
   const getChangedCount = () => {
     if (!sealData.players) return 0;
     const all50 = sealData.players['50_seal'] || [];
     const all200 = sealData.players['200_seal'] || [];
     return [...all50, ...all200].filter(p => p.seal_changed).length;
-  };
+  };*/
 
   return (
     <>
@@ -290,10 +290,6 @@ export default function SorarePlayerSealData({ sealData }) {
             <div className="summary-item">
               <span className="summary-number">{sealData.summary?.['200_seal_count'] || 0}</span>
               <span className="summary-label">200 Seal Players</span>
-            </div>
-            <div className="summary-item">
-              <span className="summary-number">{getChangedCount()}</span>
-              <span className="summary-label">Changes Last 24h</span>
             </div>
           </div>
         </div>
