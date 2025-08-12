@@ -53,7 +53,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
     // Changed filter
     if (filters.changed === 'changed') {
-      allPlayers = allPlayers.filter(p => p.seal_changed);
+      allPlayers = allPlayers.filter(p => p.seal != p.previous_seal);
     }
 
     // Sort
