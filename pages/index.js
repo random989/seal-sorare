@@ -388,7 +388,7 @@ export default function SorarePlayerSealData({ sealData }) {
                 <td><strong>{player.name}</strong></td>
                 <td>{getSealBadge(player.seal)}</td>
                 <td>
-                  {player.seal_changed && player.previous_seal ? (
+                  {player.seal != player.previous_seal ? (
                     <span className="previous-seal">{getSealBadge(player.previous_seal)}</span>
                   ) : null}
                 </td>
