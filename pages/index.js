@@ -284,6 +284,10 @@ export default function SorarePlayerSealData({ sealData }) {
           <h1>Sorare Player Seal Data</h1>
           <div className="summary-info">
             <div className="summary-item">
+              <span className="summary-number">{sealData.summary?.['20_seal_count'] || 0}</span>
+              <span className="summary-label">20 Seal Players</span>
+            </div>
+            <div className="summary-item">
               <span className="summary-number">{sealData.summary?.['50_seal_count'] || 0}</span>
               <span className="summary-label">50 Seal Players</span>
             </div>
@@ -310,6 +314,10 @@ export default function SorarePlayerSealData({ sealData }) {
           <div className="filter-item">
             <label>Seal Points</label>
             <div className="filter-group">
+              <button 
+                className={filters.seal === '20' ? 'active' : ''}
+                onClick={() => handleFilterChange('seal', '20')}
+              >20</button>
               <button 
                 className={filters.seal === '50' ? 'active' : ''}
                 onClick={() => handleFilterChange('seal', '50')}
