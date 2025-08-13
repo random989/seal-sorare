@@ -53,7 +53,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
     // Changed filter
     if (filters.changed === 'changed') {
-      allPlayers = allPlayers.filter(p => p.seal != p.previous_seal);
+      allPlayers = allPlayers.filter(p => p.seal_changed);
     }
 
     // Sort
@@ -392,7 +392,7 @@ export default function SorarePlayerSealData({ sealData }) {
                 <td><strong>{player.name}</strong></td>
                 <td>{getSealBadge(player.seal)}</td>
                 <td>
-                  {player.seal != player.previous_seal ? (
+                  {player.seal_changed ? (
                     <span className="previous-seal">{getSealBadge(player.previous_seal)}</span>
                   ) : null}
                 </td>
