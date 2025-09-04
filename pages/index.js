@@ -21,7 +21,6 @@ export async function getStaticProps() {
 
   const optimizedData = {
     ga: originalData.generated_at,     // generated_at
-    ut: originalData.update_type,      // update_type
     summary: originalData.summary,     // Keep summary as-is (small)
     players: {
       '20_seal': originalData.players['20_seal']?.map(optimizePlayer) || [],
