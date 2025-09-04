@@ -85,6 +85,25 @@ export default function SorarePlayerSealData({ sealData }) {
     if (!sealValue && sealValue !== 0) return '';
     return <span className={`seal-badge seal-${sealValue}`}>{sealValue}</span>;
   };
+
+  const getLastUpdateTimes = () => {
+    const generatedAt = sealData.generated_at;
+    
+    // Default: both updates use the same timestamp
+    let priceUpdateTime = generatedAt;
+    
+    // Add one hour to the timestamp
+    if (priceUpdateTime) {
+      const date = new Date(priceUpdateTime);
+      date.setHours(date.getHours() + 1);
+      priceUpdateTime = date.toISOString();
+    }
+    
+    return {
+      priceUpdate: priceUpdateTime ? new Date(priceUpdateTime).toLocaleString() : 'N/A'
+    };
+  };
+
   /*
   const getChangedCount = () => {
     if (!sealData.players) return 0;
@@ -117,6 +136,16 @@ export default function SorarePlayerSealData({ sealData }) {
           justify-content: space-between;
           align-items: center;
           margin-bottom: 30px;
+        }
+        .update-info {
+          text-align: center;
+          flex: 1;
+        }
+        .update-line {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #4a5568;
+          margin-bottom: 4px;
         }
         h1 {
           color: #2d3748;
@@ -282,6 +311,10 @@ export default function SorarePlayerSealData({ sealData }) {
       <div className="container">
         <div className="header-section">
           <h1>Sorare Player Seal Data</h1>
+          <div className="update-info">
+            <div className="update-line">Seal Values Updated Daily</div>
+            <div className="update-line">Last Price Update: {getLastUpdateTimes().priceUpdate}</div>
+          </div>
           <div className="summary-info">
             <div className="summary-item">
               <span className="summary-number">{sealData.summary?.['20_seal_count'] || 0}</span>
