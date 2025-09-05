@@ -14,7 +14,7 @@ export async function getStaticProps() {
     n: player.name,                     // name  
     se: parseInt(player.seal),          // seal
     sc: player.seal_changed,            // seal_changed
-    ps: parseInt(player.previous_seal), // previous_seal
+    sb: parseInt(player.previous_seal), // previous_seal
     pl: player.price_limited_eur,       // price_limited_eur
     pr: player.price_rare_eur,          // price_rare_eur
   });
@@ -38,42 +38,24 @@ export async function getStaticProps() {
 }
 
 export default function SorarePlayerSealData({ sealData }) {
-  const [viewMode, setViewMode] = useState('seal'); // 'seal' or 'ratio'
   const [filters, setFilters] = useState({
-    seal: '200',
+    seal: 'all',
     changed: 'all',
-    orderBy: 'limited',
-    direction: 'asc',
     search: '',
     priceType: 'limited' // 'limited' or 'rare'
   });
 
   const [filteredPlayers, setFilteredPlayers] = useState([]);
 
-  // Reset filters when view mode changes
-  useEffect(() => {
-    if (viewMode === 'ratio') {
-      // Reset filters that don't apply to ratio view
-      setFilters(prev => ({
-        ...prev,
-        changed: 'all',      // Reset to show all players
-        direction: 'asc',    // Reset sort direction (ratio view always sorts best ratios first)
-        seal: '200'          // Reset seal filter since ratio view shows all seals
-      }));
-    }
-  }, [viewMode]);
-
   useEffect(() => {
     populateTable();
-  }, [filters, sealData, viewMode]);
+  }, [filters, sealData]);
 
   // get background gradient based on current selection
   const getBackgroundGradient = () => {
-    const selectedType = viewMode === 'seal' ? filters.orderBy : filters.priceType;
-    
-    if (selectedType === 'limited') {
+    if (filters.priceType === 'limited') {
       return 'linear-gradient(135deg, #f7b100 0%, #ff9500 100%)';
-    } else if (selectedType === 'rare') {
+    } else if (filters.priceType === 'rare') {
       return 'linear-gradient(135deg, #d94951 0%, #c70000 100%)';
     }
     return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
@@ -98,15 +80,14 @@ export default function SorarePlayerSealData({ sealData }) {
 
     let allPlayers = [];
 
-    if (viewMode === 'seal') {
-      // Get players using optimized field names
-      allPlayers = [...(sealData.players[`${filters.seal}_seal`] || [])];
-    } else {
-      // Ratio view - combine all players
+    // Get players based on seal filter
+    if (filters.seal === 'all') {
       const seal20 = sealData.players['20_seal'] || [];
       const seal50 = sealData.players['50_seal'] || [];
       const seal200 = sealData.players['200_seal'] || [];
       allPlayers = [...seal20, ...seal50, ...seal200];
+    } else {
+      allPlayers = [...(sealData.players[`${filters.seal}_seal`] || [])];
     }
 
     // Search filter (using optimized field 'n' for name)
@@ -121,34 +102,18 @@ export default function SorarePlayerSealData({ sealData }) {
       allPlayers = allPlayers.filter(p => p.sc);
     }
 
-    // Sort
-    if (viewMode === 'seal') {
-      // Use optimized field names: 'pl' for price_limited_eur, 'pr' for price_rare_eur
-      const priceKey = filters.orderBy === 'limited' ? 'pl' : 'pr';
-      allPlayers.sort((a, b) => {
-        const va = a[priceKey];
-        const vb = b[priceKey];
+    // Sort by ratio - best ratios first
+    const priceKey = filters.priceType === 'limited' ? 'pl' : 'pr';
+    allPlayers.sort((a, b) => {
+      const ratioA = calculateRatio(a[priceKey], a.se); // 'se' for seal
+      const ratioB = calculateRatio(b[priceKey], b.se);
 
-        if (va == null && vb == null) return 0;
-        if (va == null) return 1;
-        if (vb == null) return -1;
+      if (ratioA == null && ratioB == null) return 0;
+      if (ratioA == null) return 1;
+      if (ratioB == null) return -1;
 
-        return filters.direction === 'asc' ? va - vb : vb - va;
-      });
-    } else {
-      // Ratio view sorting with runtime calculation
-      const priceKey = filters.priceType === 'limited' ? 'pl' : 'pr';
-      allPlayers.sort((a, b) => {
-        const ratioA = calculateRatio(a[priceKey], a.se); // 'se' for seal
-        const ratioB = calculateRatio(b[priceKey], b.se);
-
-        if (ratioA == null && ratioB == null) return 0;
-        if (ratioA == null) return 1;
-        if (ratioB == null) return -1;
-
-        return ratioA - ratioB; // Always ascending - best ratios first
-      });
-    }
+      return ratioA - ratioB; // Always ascending - best ratios first
+    });
 
     setFilteredPlayers(allPlayers);
   };
@@ -215,36 +180,12 @@ export default function SorarePlayerSealData({ sealData }) {
           align-items: center;
           margin-bottom: 30px;
         }
-        .title-with-toggle {
+        .title-section {
           display: flex;
           align-items: center;
-          gap: 20px;
-        }
-        .view-toggle {
-          display: inline-flex;
-          border-radius: 8px;
-          overflow: hidden;
-          border: 2px solid #667eea;
-          font-size: 0.875rem;
-        }
-        .view-toggle button {
-          background: white;
-          border: none;
-          padding: 8px 16px;
-          cursor: pointer;
-          font-weight: 600;
-          color: #667eea;
-          transition: all 0.2s;
-        }
-        .view-toggle button.active {
-          background: #667eea;
-          color: white;
-        }
-        .view-toggle button:hover:not(.active) {
-          background: #f0f4ff;
         }
         .update-info {
-          text-align: center;
+          text-align: left;
           flex: 1;
         }
         .update-line {
@@ -288,7 +229,7 @@ export default function SorarePlayerSealData({ sealData }) {
           justify-content: space-between;
           align-items: flex-end;
           margin-bottom: 20px;
-          gap: 10px;
+          gap: 15px;
         }
         .filter-item {
           flex: 1;
@@ -327,6 +268,7 @@ export default function SorarePlayerSealData({ sealData }) {
           cursor: pointer;
           font-weight: 600;
           transition: background 0.2s;
+          font-size: 0.875rem;
         }
         .filter-group button.active {
           background: #667eea;
@@ -422,22 +364,7 @@ export default function SorarePlayerSealData({ sealData }) {
       
       <div className="container">
         <div className="header-section">
-          <div className="title-with-toggle">
-            <div className="view-toggle">
-              <button 
-                className={viewMode === 'seal' ? 'active' : ''}
-                onClick={() => setViewMode('seal')}
-              >
-                Seal Points Table
-              </button>
-              <button 
-                className={viewMode === 'ratio' ? 'active' : ''}
-                onClick={() => setViewMode('ratio')}
-              >
-                Ratio Table
-              </button>
-            </div>
-          </div>
+
           <div className="update-info">
             <div className="update-line">Seal Values Updated Daily</div>
             <div className="update-line">Last Price Update: {getLastUpdateTimes().priceUpdate}</div>
@@ -469,88 +396,55 @@ export default function SorarePlayerSealData({ sealData }) {
             />
           </div>
 
-          {viewMode === 'seal' ? (
-            <>
-              <div className="filter-item">
-                <label>Seal Points</label>
-                <div className="filter-group">
-                  <button 
-                    className={filters.seal === '20' ? 'active' : ''}
-                    onClick={() => handleFilterChange('seal', '20')}
-                  >20</button>
-                  <button 
-                    className={filters.seal === '50' ? 'active' : ''}
-                    onClick={() => handleFilterChange('seal', '50')}
-                  >50</button>
-                  <button 
-                    className={filters.seal === '200' ? 'active' : ''}
-                    onClick={() => handleFilterChange('seal', '200')}
-                  >200</button>
-                </div>
-              </div>
+          <div className="filter-item">
+            <label>Card Type</label>
+            <div className="filter-group">
+              <button 
+                className={filters.priceType === 'limited' ? 'active' : ''}
+                onClick={() => handleFilterChange('priceType', 'limited')}
+              >Limited</button>
+              <button 
+                className={filters.priceType === 'rare' ? 'active' : ''}
+                onClick={() => handleFilterChange('priceType', 'rare')}
+              >Rare</button>
+            </div>
+          </div>
 
-              <div className="filter-item">
-                <label>Show</label>
-                <div className="filter-group">
-                  <button 
-                    className={filters.changed === 'all' ? 'active' : ''}
-                    onClick={() => handleFilterChange('changed', 'all')}
-                  >All</button>
-                  <button 
-                    className={filters.changed === 'changed' ? 'active' : ''}
-                    onClick={() => handleFilterChange('changed', 'changed')}
-                  >Changed</button>
-                </div>
-              </div>
+          <div className="filter-item">
+            <label>Seal Points</label>
+            <div className="filter-group">
+              <button 
+                className={filters.seal === 'all' ? 'active' : ''}
+                onClick={() => handleFilterChange('seal', 'all')}
+              >All</button>
+              <button 
+                className={filters.seal === '20' ? 'active' : ''}
+                onClick={() => handleFilterChange('seal', '20')}
+              >20</button>
+              <button 
+                className={filters.seal === '50' ? 'active' : ''}
+                onClick={() => handleFilterChange('seal', '50')}
+              >50</button>
+              <button 
+                className={filters.seal === '200' ? 'active' : ''}
+                onClick={() => handleFilterChange('seal', '200')}
+              >200</button>
+            </div>
+          </div>
 
-              <div className="filter-item">
-                <label>Order By</label>
-                <div className="filter-group">
-                  <button 
-                    className={filters.orderBy === 'limited' ? 'active' : ''}
-                    onClick={() => handleFilterChange('orderBy', 'limited')}
-                  >Limited</button>
-                  <button 
-                    className={filters.orderBy === 'rare' ? 'active' : ''}
-                    onClick={() => handleFilterChange('orderBy', 'rare')}
-                  >Rare</button>
-                </div>
-              </div>
-
-              <div className="filter-item">
-                <label>Sort</label>
-                <div className="filter-group">
-                  <button 
-                    className={filters.direction === 'asc' ? 'active' : ''}
-                    onClick={() => handleFilterChange('direction', 'asc')}
-                  >Low to High</button>
-                  <button 
-                    className={filters.direction === 'desc' ? 'active' : ''}
-                    onClick={() => handleFilterChange('direction', 'desc')}
-                  >High to Low</button>
-                </div>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="filter-item"></div>
-              <div className="filter-item">
-                <label>Card Type</label>
-                <div className="filter-group">
-                  <button 
-                    className={filters.priceType === 'limited' ? 'active' : ''}
-                    onClick={() => handleFilterChange('priceType', 'limited')}
-                  >Limited</button>
-                  <button 
-                    className={filters.priceType === 'rare' ? 'active' : ''}
-                    onClick={() => handleFilterChange('priceType', 'rare')}
-                  >Rare</button>
-                </div>
-              </div>
-              <div className="filter-item"></div>
-              <div className="filter-item"></div>
-            </>
-          )}
+          <div className="filter-item">
+            <label>Show</label>
+            <div className="filter-group">
+              <button 
+                className={filters.changed === 'all' ? 'active' : ''}
+                onClick={() => handleFilterChange('changed', 'all')}
+              >All</button>
+              <button 
+                className={filters.changed === 'changed' ? 'active' : ''}
+                onClick={() => handleFilterChange('changed', 'changed')}
+              >Changed</button>
+            </div>
+          </div>
         </div>
 
         <table>
@@ -559,17 +453,8 @@ export default function SorarePlayerSealData({ sealData }) {
               <th>Player Name</th>
               <th>Seal Points</th>
               <th>Previous Seal</th>
-              {viewMode === 'seal' ? (
-                <>
-                  <th>Limited Price (€)</th>
-                  <th>Rare Price (€)</th>
-                </>
-              ) : (
-                <>
-                  <th>{filters.priceType === 'limited' ? 'Limited' : 'Rare'} Price (€)</th>
-                  <th>€ per Seal Point</th>
-                </>
-              )}
+              <th>{filters.priceType === 'limited' ? 'Limited' : 'Rare'} Price (€)</th>
+              <th>€ per Seal Point</th>
               <th>Sorare Link</th>
             </tr>
           </thead>
@@ -580,31 +465,22 @@ export default function SorarePlayerSealData({ sealData }) {
                 <td>{getSealBadge(player.se || player.seal)}</td>
                 <td>
                   {(player.sc || player.seal_changed) ? (
-                    <span className="previous-seal">{getSealBadge(player.ps || player.previous_seal)}</span>
+                    <span className="previous-seal">{getSealBadge(player.sb || player.previous_seal)}</span>
                   ) : null}
                 </td>
-                {viewMode === 'seal' ? (
-                  <>
-                    <td className="price">{formatPrice(player.pl || player.price_limited_eur)}</td>
-                    <td className="price">{formatPrice(player.pr || player.price_rare_eur)}</td>
-                  </>
-                ) : (
-                  <>
-                    <td className="price">
-                      {formatPrice(filters.priceType === 'limited' ? 
-                        (player.pl || player.price_limited_eur) : 
-                        (player.pr || player.price_rare_eur))}
-                    </td>
-                    <td className="ratio">
-                      {formatRatio(
-                        filters.priceType === 'limited' ? 
-                          (player.pl || player.price_limited_eur) : 
-                          (player.pr || player.price_rare_eur),
-                        player.se || player.seal
-                      )}
-                    </td>
-                  </>
-                )}
+                <td className="price">
+                  {formatPrice(filters.priceType === 'limited' ? 
+                    (player.pl || player.price_limited_eur) : 
+                    (player.pr || player.price_rare_eur))}
+                </td>
+                <td className="ratio">
+                  {formatRatio(
+                    filters.priceType === 'limited' ? 
+                      (player.pl || player.price_limited_eur) : 
+                      (player.pr || player.price_rare_eur),
+                    player.se || player.seal
+                  )}
+                </td>
                 <td>
                   <a href={`https://sorare.com/football/players/${player.s || player.slug}`} target="_blank" rel="noopener noreferrer">
                     View Player
