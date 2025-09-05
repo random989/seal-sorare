@@ -17,6 +17,7 @@ export async function getStaticProps() {
     sb: parseInt(player.previous_seal), // previous_seal
     pl: player.price_limited_eur,       // price_limited_eur
     pr: player.price_rare_eur,          // price_rare_eur
+    ps: player.price_superrare_eur,          // price_superrare_eur
   });
 
   const optimizedData = {
@@ -42,7 +43,7 @@ export default function SorarePlayerSealData({ sealData }) {
     seal: 'all',
     changed: 'all',
     search: '',
-    priceType: 'limited' // 'limited' or 'rare'
+    priceType: 'limited' // 'limited' or 'rare' or 'superrare'
   });
 
   const [filteredPlayers, setFilteredPlayers] = useState([]);
@@ -51,12 +52,14 @@ export default function SorarePlayerSealData({ sealData }) {
     populateTable();
   }, [filters, sealData]);
 
-  // get background gradient based on current selection
+  // get background gradient based on current selection#1487e1
   const getBackgroundGradient = () => {
     if (filters.priceType === 'limited') {
       return 'linear-gradient(135deg, #f7b100 0%, #ff9500 100%)';
     } else if (filters.priceType === 'rare') {
       return 'linear-gradient(135deg, #d94951 0%, #c70000 100%)';
+    } else if (filters.priceType === 'superrare') {
+      return 'linear-gradient(135deg, #077ad4 0%, #c70000 100%)';
     }
     return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
   };
@@ -103,7 +106,7 @@ export default function SorarePlayerSealData({ sealData }) {
     }
 
     // Sort by ratio - best ratios first
-    const priceKey = filters.priceType === 'limited' ? 'pl' : 'pr';
+    const priceKey = (filters.priceType === 'limited' ? 'pl' : filters.priceType === 'rare' ? 'pr' : 'ps');
     allPlayers.sort((a, b) => {
       const ratioA = calculateRatio(a[priceKey], a.se); // 'se' for seal
       const ratioB = calculateRatio(b[priceKey], b.se);
@@ -407,6 +410,10 @@ export default function SorarePlayerSealData({ sealData }) {
                 className={filters.priceType === 'rare' ? 'active' : ''}
                 onClick={() => handleFilterChange('priceType', 'rare')}
               >Rare</button>
+              <button 
+                className={filters.priceType === 'superrare' ? 'active' : ''}
+                onClick={() => handleFilterChange('priceType', 'superrare')}
+              >Super Rare</button>
             </div>
           </div>
 
@@ -453,7 +460,7 @@ export default function SorarePlayerSealData({ sealData }) {
               <th>Player Name</th>
               <th>Seal Points</th>
               <th>Previous Seal</th>
-              <th>{filters.priceType === 'limited' ? 'Limited' : 'Rare'} Price (€)</th>
+              <th>{filters.priceType === 'limited' ? 'Limited' : filters.priceType === 'rare' ? 'Rare' : 'Super Rare'} Price (€)</th>
               <th>€ per Seal Point</th>
               <th>Sorare Link</th>
             </tr>
@@ -463,23 +470,16 @@ export default function SorarePlayerSealData({ sealData }) {
               <tr key={index}>
                 <td><strong>{player.n || player.name}</strong></td>
                 <td>{getSealBadge(player.se || player.seal)}</td>
-                <td>
+                                <td>
                   {(player.sc || player.seal_changed) ? (
                     <span className="previous-seal">{getSealBadge(player.sb || player.previous_seal)}</span>
                   ) : null}
                 </td>
                 <td className="price">
-                  {formatPrice(filters.priceType === 'limited' ? 
-                    (player.pl || player.price_limited_eur) : 
-                    (player.pr || player.price_rare_eur))}
+                  {formatPrice(filters.priceType === 'limited' ? player.pl : filters.priceType === 'rare' ? player.pr : player.ps)}
                 </td>
                 <td className="ratio">
-                  {formatRatio(
-                    filters.priceType === 'limited' ? 
-                      (player.pl || player.price_limited_eur) : 
-                      (player.pr || player.price_rare_eur),
-                    player.se || player.seal
-                  )}
+                  {formatRatio(filters.priceType === 'limited' ? player.pl : filters.priceType === 'rare' ? player.pr : player.ps, player.se || player.seal)}
                 </td>
                 <td>
                   <a href={`https://sorare.com/football/players/${player.s || player.slug}`} target="_blank" rel="noopener noreferrer">
