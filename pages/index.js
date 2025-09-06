@@ -8,22 +8,40 @@ export async function getStaticProps() {
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const originalData = JSON.parse(jsonData);
 
-  // Transform players to optimize size
-  const optimizePlayer = (player) => ({
-    s: player.slug,                     // slug
-    n: player.name,                     // name  
-    se: parseInt(player.seal),          // seal
-    sc: player.seal_changed,            // seal_changed
-    sb: parseInt(player.previous_seal), // previous_seal
-    pl: player.price_limited_eur,       // price_limited_eur
-    pr: player.price_rare_eur,          // price_rare_eur
-    ps: player.price_superrare_eur,          // price_superrare_eur
-  });
+  // Helper function to calculate ratio
+  const calculateRatio = (price, sealValue) => {
+    if (!price || !sealValue) return null;
+    return parseFloat((price / parseInt(sealValue)).toFixed(3));
+  };
+
+  // Transform players to optimize size and pre-calculate ratios
+  const optimizePlayer = (player) => {
+    const sealValue = parseInt(player.seal);
+    const limitedPrice = player.price_limited_eur;
+    const rarePrice = player.price_rare_eur;
+    const superrarePrice = player.price_superrare_eur;
+
+    return {
+      s: player.slug,                     // slug
+      n: player.name,                     // name  
+      se: sealValue,                      // seal
+      sc: player.seal_changed ? 1 : 0,    // seal_changed
+      sb: parseInt(player.previous_seal), // previous_seal
+      pl: limitedPrice,                   // price_limited_eur
+      pr: rarePrice,                      // price_rare_eur
+      ps: superrarePrice,                 // price_superrare_eur
+      // Pre-calculated ratios
+      rl: calculateRatio(limitedPrice, sealValue),    // ratio_limited
+      rr: calculateRatio(rarePrice, sealValue),       // ratio_rare
+      rs: calculateRatio(superrarePrice, sealValue),  // ratio_superrare
+    };
+  };
 
   const optimizedData = {
     ga: originalData.generated_at,     // generated_at
     summary: originalData.summary,     // Keep summary as-is (small)
     players: {
+      '5_seal': originalData.players['5_seal']?.map(optimizePlayer) || [],
       '20_seal': originalData.players['20_seal']?.map(optimizePlayer) || [],
       '50_seal': originalData.players['50_seal']?.map(optimizePlayer) || [],
       '200_seal': originalData.players['200_seal']?.map(optimizePlayer) || [],
@@ -47,35 +65,65 @@ export default function SorarePlayerSealData({ sealData }) {
   });
 
   const [filteredPlayers, setFilteredPlayers] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [playersPerPage, setPlayersPerPage] = useState(50);
 
   useEffect(() => {
     populateTable();
+    setCurrentPage(1); // Reset to first page when filters change
   }, [filters, sealData]);
 
-  // get background gradient based on current selection#1487e1
+  // get background gradient based on current selection
   const getBackgroundGradient = () => {
     if (filters.priceType === 'limited') {
       return 'linear-gradient(135deg, #f7b100 0%, #ff9500 100%)';
     } else if (filters.priceType === 'rare') {
       return 'linear-gradient(135deg, #d94951 0%, #c70000 100%)';
     } else if (filters.priceType === 'superrare') {
-      return 'linear-gradient(135deg, #077ad4 0%, #c70000 100%)';
+      return 'linear-gradient(135deg, #077ad4 0%, #077ad4 100%)';
     }
     return 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
   };
 
   const handleFilterChange = (filterType, value) => {
-    setFilters(prev => ({ ...prev, [filterType]: value }));
+    setFilters(prev => {
+      const newFilters = { ...prev, [filterType]: value };
+      
+      // If switching to Limited price type while 5 seal is selected, reset to 'all'
+      if (filterType === 'priceType' && value === 'limited' && prev.seal === '5') {
+        newFilters.seal = 'all';
+      }
+      
+      return newFilters;
+    });
   };
 
   const handleSearchChange = (e) => {
     setFilters(prev => ({ ...prev, search: e.target.value.toLowerCase() }));
   };
 
-  // Calculate ratios at runtime 
-  const calculateRatio = (price, sealValue) => {
-    if (!price || !sealValue) return null;
-    return price / parseInt(sealValue);
+  const handlePlayersPerPageChange = (e) => {
+    setPlayersPerPage(parseInt(e.target.value));
+    setCurrentPage(1);
+  };
+
+  // Get pre-calculated ratio based on price type
+  const getRatioField = (priceType) => {
+    switch(priceType) {
+      case 'limited': return 'rl';
+      case 'rare': return 'rr';
+      case 'superrare': return 'rs';
+      default: return 'rl';
+    }
+  };
+
+  const getPriceField = (priceType) => {
+    switch(priceType) {
+      case 'limited': return 'pl';
+      case 'rare': return 'pr';
+      case 'superrare': return 'ps';
+      default: return 'pl';
+    }
   };
 
   const populateTable = () => {
@@ -85,10 +133,11 @@ export default function SorarePlayerSealData({ sealData }) {
 
     // Get players based on seal filter
     if (filters.seal === 'all') {
+      const seal5 = sealData.players['5_seal'] || [];
       const seal20 = sealData.players['20_seal'] || [];
       const seal50 = sealData.players['50_seal'] || [];
       const seal200 = sealData.players['200_seal'] || [];
-      allPlayers = [...seal20, ...seal50, ...seal200];
+      allPlayers = [...seal5, ...seal20, ...seal50, ...seal200];
     } else {
       allPlayers = [...(sealData.players[`${filters.seal}_seal`] || [])];
     }
@@ -105,11 +154,11 @@ export default function SorarePlayerSealData({ sealData }) {
       allPlayers = allPlayers.filter(p => p.sc);
     }
 
-    // Sort by ratio - best ratios first
-    const priceKey = (filters.priceType === 'limited' ? 'pl' : filters.priceType === 'rare' ? 'pr' : 'ps');
+    // Sort by pre-calculated ratio - best ratios first
+    const ratioField = getRatioField(filters.priceType);
     allPlayers.sort((a, b) => {
-      const ratioA = calculateRatio(a[priceKey], a.se); // 'se' for seal
-      const ratioB = calculateRatio(b[priceKey], b.se);
+      const ratioA = a[ratioField];
+      const ratioB = b[ratioField];
 
       if (ratioA == null && ratioB == null) return 0;
       if (ratioA == null) return 1;
@@ -121,6 +170,43 @@ export default function SorarePlayerSealData({ sealData }) {
     setFilteredPlayers(allPlayers);
   };
 
+  // Pagination calculations
+  const totalPlayers = filteredPlayers.length;
+  const totalPages = Math.ceil(totalPlayers / playersPerPage);
+  const startIndex = (currentPage - 1) * playersPerPage;
+  const endIndex = startIndex + playersPerPage;
+  const currentPlayers = filteredPlayers.slice(startIndex, endIndex);
+
+  const goToPage = (page) => {
+    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
+  };
+
+  const getPaginationNumbers = () => {
+    const delta = 2; // Number of pages to show on each side of current page
+    const range = [];
+    const rangeWithDots = [];
+
+    for (let i = Math.max(2, currentPage - delta); i <= Math.min(totalPages - 1, currentPage + delta); i++) {
+      range.push(i);
+    }
+
+    if (currentPage - delta > 2) {
+      rangeWithDots.push(1, '...');
+    } else {
+      rangeWithDots.push(1);
+    }
+
+    rangeWithDots.push(...range);
+
+    if (currentPage + delta < totalPages - 1) {
+      rangeWithDots.push('...', totalPages);
+    } else if (totalPages > 1) {
+      rangeWithDots.push(totalPages);
+    }
+
+    return rangeWithDots;
+  };
+
   const formatPrice = (price) => {
     if (price === null || price === undefined) {
       return <span className="no-price">-</span>;
@@ -128,9 +214,8 @@ export default function SorarePlayerSealData({ sealData }) {
     return price.toFixed(2);
   };
 
-  const formatRatio = (price, sealValue) => {
-    const ratio = calculateRatio(price, sealValue);
-    if (ratio === null) {
+  const formatRatio = (ratio) => {
+    if (ratio === null || ratio === undefined) {
       return <span className="no-price">-</span>;
     }
     return `€${ratio.toFixed(3)}`;
@@ -245,7 +330,7 @@ export default function SorarePlayerSealData({ sealData }) {
           margin-bottom: 4px;
           font-size: 0.875rem;
         }
-        .filter-item input {
+        .filter-item input, .filter-item select {
           padding: 8px 12px;
           border: 1px solid #ccc;
           border-radius: 6px;
@@ -253,7 +338,7 @@ export default function SorarePlayerSealData({ sealData }) {
           width: 250px;
           transition: border-color 0.2s;
         }
-        .filter-item input:focus {
+        .filter-item input:focus, .filter-item select:focus {
           outline: none;
           border-color: #667eea;
           box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
@@ -279,6 +364,38 @@ export default function SorarePlayerSealData({ sealData }) {
         }
         .filter-group button:hover:not(.active) {
           background: #ddd;
+        }
+        .pagination-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          padding: 15px;
+          background: rgba(102, 126, 234, 0.05);
+          border-radius: 10px;
+          border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        .results-info {
+          font-weight: 600;
+          color: #4a5568;
+        }
+        .rows-per-page {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .rows-per-page label {
+          font-weight: 600;
+          color: #4a5568;
+          font-size: 0.875rem;
+        }
+        .rows-per-page select {
+          padding: 6px 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 0.875rem;
+          width: auto;
+          min-width: 70px;
         }
         table {
           width: 100%;
@@ -363,16 +480,65 @@ export default function SorarePlayerSealData({ sealData }) {
           font-style: italic;
           font-weight: 500;
         }
+        .pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-top: 30px;
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.7);
+          border-radius: 12px;
+          backdrop-filter: blur(10px);
+        }
+        .pagination button {
+          padding: 10px 15px;
+          border: 1px solid #d1d5db;
+          background: white;
+          color: #374151;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.2s ease;
+          min-width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .pagination button:hover:not(:disabled) {
+          background: #f3f4f6;
+          border-color: #9ca3af;
+          transform: translateY(-1px);
+        }
+        .pagination button.active {
+          background: #667eea;
+          border-color: #667eea;
+          color: white;
+        }
+        .pagination button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          transform: none;
+        }
+        .pagination .dots {
+          padding: 10px 5px;
+          color: #6b7280;
+          font-weight: 600;
+        }
       `}</style>
       
       <div className="container">
         <div className="header-section">
-
           <div className="update-info">
             <div className="update-line">Seal Values Updated Daily</div>
             <div className="update-line">Last Price Update: {getLastUpdateTimes().priceUpdate}</div>
           </div>
           <div className="summary-info">
+            <div className="summary-item">
+              <span className="summary-number">{sealData.summary?.['5_seal_count'] || 0}</span>
+              <span className="summary-label">5 Seal Players</span>
+            </div>
             <div className="summary-item">
               <span className="summary-number">{sealData.summary?.['20_seal_count'] || 0}</span>
               <span className="summary-label">20 Seal Players</span>
@@ -424,6 +590,12 @@ export default function SorarePlayerSealData({ sealData }) {
                 className={filters.seal === 'all' ? 'active' : ''}
                 onClick={() => handleFilterChange('seal', 'all')}
               >All</button>
+              {filters.priceType !== 'limited' && (
+                <button 
+                  className={filters.seal === '5' ? 'active' : ''}
+                  onClick={() => handleFilterChange('seal', '5')}
+                >5</button>
+              )}
               <button 
                 className={filters.seal === '20' ? 'active' : ''}
                 onClick={() => handleFilterChange('seal', '20')}
@@ -454,6 +626,8 @@ export default function SorarePlayerSealData({ sealData }) {
           </div>
         </div>
 
+        
+
         <table>
           <thead>
             <tr>
@@ -466,30 +640,67 @@ export default function SorarePlayerSealData({ sealData }) {
             </tr>
           </thead>
           <tbody>
-            {filteredPlayers.map((player, index) => (
-              <tr key={index}>
-                <td><strong>{player.n || player.name}</strong></td>
-                <td>{getSealBadge(player.se || player.seal)}</td>
-                                <td>
-                  {(player.sc || player.seal_changed) ? (
-                    <span className="previous-seal">{getSealBadge(player.sb || player.previous_seal)}</span>
-                  ) : null}
-                </td>
-                <td className="price">
-                  {formatPrice(filters.priceType === 'limited' ? player.pl : filters.priceType === 'rare' ? player.pr : player.ps)}
-                </td>
-                <td className="ratio">
-                  {formatRatio(filters.priceType === 'limited' ? player.pl : filters.priceType === 'rare' ? player.pr : player.ps, player.se || player.seal)}
-                </td>
-                <td>
-                  <a href={`https://sorare.com/football/players/${player.s || player.slug}`} target="_blank" rel="noopener noreferrer">
-                    View Player
-                  </a>
-                </td>
-              </tr>
-            ))}
+            {currentPlayers.map((player, index) => {
+              const priceField = getPriceField(filters.priceType);
+              const ratioField = getRatioField(filters.priceType);
+              
+              return (
+                <tr key={startIndex + index}>
+                  <td><strong>{player.n || player.name}</strong></td>
+                  <td>{getSealBadge(player.se || player.seal)}</td>
+                  <td>
+                    {(player.sc || player.seal_changed) ? (
+                      <span className="previous-seal">{getSealBadge(player.sb || player.previous_seal)}</span>
+                    ) : null}
+                  </td>
+                  <td className="price">
+                    {formatPrice(player[priceField])}
+                  </td>
+                  <td className="ratio">
+                    {formatRatio(player[ratioField])}
+                  </td>
+                  <td>
+                    <a href={`https://sorare.com/football/players/${player.s || player.slug}`} target="_blank" rel="noopener noreferrer">
+                      View Player
+                    </a>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
+
+        {totalPages > 1 && (
+          <div className="pagination">
+            <button 
+              onClick={() => goToPage(currentPage - 1)} 
+              disabled={currentPage === 1}
+            >
+              ← Previous
+            </button>
+            
+            {getPaginationNumbers().map((number, index) => (
+              number === '...' ? (
+                <span key={index} className="dots">...</span>
+              ) : (
+                <button
+                  key={index}
+                  onClick={() => goToPage(number)}
+                  className={currentPage === number ? 'active' : ''}
+                >
+                  {number}
+                </button>
+              )
+            ))}
+            
+            <button 
+              onClick={() => goToPage(currentPage + 1)} 
+              disabled={currentPage === totalPages}
+            >
+              Next →
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
