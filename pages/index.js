@@ -39,7 +39,7 @@ export async function getStaticProps() {
 
   const optimizedData = {
     ga: originalData.generated_at,     // generated_at
-    summary: originalData.summary,     // Keep summary as-is (small)
+    summary: originalData.summary,     
     players: {
       '5_seal': originalData.players['5_seal']?.map(optimizePlayer) || [],
       '20_seal': originalData.players['20_seal']?.map(optimizePlayer) || [],
@@ -182,7 +182,7 @@ export default function SorarePlayerSealData({ sealData }) {
   };
 
   const getPaginationNumbers = () => {
-    const delta = 2; // Number of pages to show on each side of current page
+    const delta = 1; // Number of pages to show on each side of current page
     const range = [];
     const rangeWithDots = [];
 
@@ -252,15 +252,17 @@ export default function SorarePlayerSealData({ sealData }) {
           background: ${getBackgroundGradient()};
           min-height: 100vh;
           transition: background 0.3s ease;
+          color: #e2e8f0;
         }
         .container {
           max-width: 1400px;
           margin: 0 auto;
-          background: rgba(255, 255, 255, 0.95);
+          background: rgba(30, 41, 59, 0.95);
           backdrop-filter: blur(10px);
           padding: 30px;
           border-radius: 20px;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+          border: 1px solid rgba(71, 85, 105, 0.3);
         }
         .header-section {
           display: flex;
@@ -279,11 +281,11 @@ export default function SorarePlayerSealData({ sealData }) {
         .update-line {
           font-size: 0.875rem;
           font-weight: 600;
-          color: #4a5568;
+          color: #cbd5e1;
           margin-bottom: 4px;
         }
         h1 {
-          color: #2d3748;
+          color: #f1f5f9;
           margin: 0;
           font-size: 2.5rem;
           font-weight: 700;
@@ -303,13 +305,13 @@ export default function SorarePlayerSealData({ sealData }) {
           display: block;
           font-size: 1.5rem;
           font-weight: 700;
-          color: #4a5568;
+          color: #f1f5f9;
         }
         .summary-label {
           display: block;
           font-size: 0.875rem;
           font-weight: 600;
-          color: #718096;
+          color: #94a3b8;
           margin-top: 2px;
         }
         .toolbar {
@@ -326,44 +328,50 @@ export default function SorarePlayerSealData({ sealData }) {
         .filter-item label {
           display: block;
           font-weight: 600;
-          color: #4a5568;
+          color: #cbd5e1;
           margin-bottom: 4px;
           font-size: 0.875rem;
         }
         .filter-item input, .filter-item select {
           padding: 8px 12px;
-          border: 1px solid #ccc;
+          border: 1px solid #475569;
           border-radius: 6px;
           font-size: 0.875rem;
           width: 250px;
           transition: border-color 0.2s;
+          background: #334155;
+          color: #f1f5f9;
         }
         .filter-item input:focus, .filter-item select:focus {
           outline: none;
           border-color: #667eea;
-          box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+          box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+        .filter-item input::placeholder {
+          color: #94a3b8;
         }
         .filter-group {
           display: inline-flex;
           border-radius: 6px;
           overflow: hidden;
-          border: 1px solid #ccc;
+          border: 1px solid #475569;
         }
         .filter-group button {
-          background: #f0f0f0;
+          background: #475569;
           border: none;
           padding: 8px 12px;
           cursor: pointer;
           font-weight: 600;
           transition: background 0.2s;
           font-size: 0.875rem;
+          color: #e2e8f0;
         }
         .filter-group button.active {
           background: #667eea;
           color: white;
         }
         .filter-group button:hover:not(.active) {
-          background: #ddd;
+          background: #64748b;
         }
         .pagination-info {
           display: flex;
@@ -371,13 +379,13 @@ export default function SorarePlayerSealData({ sealData }) {
           align-items: center;
           margin-bottom: 20px;
           padding: 15px;
-          background: rgba(102, 126, 234, 0.05);
+          background: rgba(102, 126, 234, 0.1);
           border-radius: 10px;
-          border: 1px solid rgba(102, 126, 234, 0.1);
+          border: 1px solid rgba(102, 126, 234, 0.2);
         }
         .results-info {
           font-weight: 600;
-          color: #4a5568;
+          color: #cbd5e1;
         }
         .rows-per-page {
           display: flex;
@@ -386,16 +394,18 @@ export default function SorarePlayerSealData({ sealData }) {
         }
         .rows-per-page label {
           font-weight: 600;
-          color: #4a5568;
+          color: #cbd5e1;
           font-size: 0.875rem;
         }
         .rows-per-page select {
           padding: 6px 10px;
-          border: 1px solid #ccc;
+          border: 1px solid #475569;
           border-radius: 6px;
           font-size: 0.875rem;
           width: auto;
           min-width: 70px;
+          background: #334155;
+          color: #f1f5f9;
         }
         table {
           width: 100%;
@@ -404,29 +414,31 @@ export default function SorarePlayerSealData({ sealData }) {
           margin: 20px 0;
           border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
         th, td {
           padding: 16px 20px;
           text-align: center;
         }
         th {
-          background: linear-gradient(135deg, #4a5568, #2d3748);
-          color: white;
+          background: linear-gradient(135deg, #1e293b, #0f172a);
+          color: #f1f5f9;
           font-weight: 600;
           text-transform: uppercase;
           font-size: 0.875rem;
           letter-spacing: 0.5px;
+          border-bottom: 1px solid #334155;
         }
         td {
-          background: white;
-          border-bottom: 1px solid #e2e8f0;
+          background: #1e293b;
+          border-bottom: 1px solid #334155;
+          color: #e2e8f0;
         }
         tr:nth-child(even) td {
-          background: #f8fafc;
+          background: #334155;
         }
         tr:hover td {
-          background: #edf2f7;
+          background: #475569;
           transform: scale(1.01);
           transition: all 0.2s ease;
         }
@@ -439,7 +451,7 @@ export default function SorarePlayerSealData({ sealData }) {
           text-align: center;
           font-weight: 700;
           font-family: 'SF Mono', Monaco, monospace;
-          color: #2d3748;
+          color: #f1f5f9;
         }
         .seal-badge {
           display: inline-block;
@@ -450,33 +462,33 @@ export default function SorarePlayerSealData({ sealData }) {
           color: white;
           text-align: center;
           min-width: 40px;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          box-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
-        .seal-1 { background: #ff5a5a; }
-        .seal-2 { background: #ff7e34; }
-        .seal-5 { background: #f0ce1d; }
-        .seal-20 { background: #b6ff1a; }
-        .seal-50 { background: #25ed36; }
-        .seal-200 { background: #00f3eb; }
+        .seal-1 { background: #cc4848; }
+        .seal-2 { background: #cc652a; }
+        .seal-5 { background: #c0a517; }
+        .seal-20 { background: #92cc15; }
+        .seal-50 { background: #1ebe2b; }
+        .seal-200 { background: #00c2bc; }
         .previous-seal {
           opacity: 0.8;
           margin-left: 8px;
         }
         a {
-          color: #4299e1;
+          color: #60a5fa;
           text-decoration: none;
           font-weight: 600;
           padding: 8px 16px;
           border-radius: 8px;
-          background: rgba(66, 153, 225, 0.1);
+          background: rgba(96, 165, 250, 0.1);
           transition: all 0.2s ease;
         }
         a:hover {
-          background: rgba(66, 153, 225, 0.2);
+          background: rgba(96, 165, 250, 0.2);
           transform: translateY(-1px);
         }
         .no-price {
-          color: #a0aec0;
+          color: #64748b;
           font-style: italic;
           font-weight: 500;
         }
@@ -487,15 +499,16 @@ export default function SorarePlayerSealData({ sealData }) {
           gap: 10px;
           margin-top: 30px;
           padding: 20px;
-          background: rgba(255, 255, 255, 0.7);
+          background: rgba(30, 41, 59, 0.7);
           border-radius: 12px;
           backdrop-filter: blur(10px);
+          border: 1px solid rgba(71, 85, 105, 0.3);
         }
         .pagination button {
           padding: 10px 15px;
-          border: 1px solid #d1d5db;
-          background: white;
-          color: #374151;
+          border: 1px solid #475569;
+          background: #334155;
+          color: #e2e8f0;
           border-radius: 8px;
           cursor: pointer;
           font-weight: 600;
@@ -507,8 +520,8 @@ export default function SorarePlayerSealData({ sealData }) {
           justify-content: center;
         }
         .pagination button:hover:not(:disabled) {
-          background: #f3f4f6;
-          border-color: #9ca3af;
+          background: #475569;
+          border-color: #64748b;
           transform: translateY(-1px);
         }
         .pagination button.active {
@@ -523,7 +536,7 @@ export default function SorarePlayerSealData({ sealData }) {
         }
         .pagination .dots {
           padding: 10px 5px;
-          color: #6b7280;
+          color: #94a3b8;
           font-weight: 600;
         }
       `}</style>
