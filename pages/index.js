@@ -66,6 +66,7 @@ export default function SorarePlayerSealData({ sealData }) {
   const [filteredPlayers, setFilteredPlayers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [playersPerPage, setPlayersPerPage] = useState(50);
+  const [clientTime, setClientTime] = useState(null);
 
   useEffect(() => {
     populateTable();
@@ -219,19 +220,12 @@ export default function SorarePlayerSealData({ sealData }) {
     return <span className={`seal-badge seal-${sealValue}`}>{sealValue}</span>;
   };
 
-  const getLastUpdateTimes = () => {
-    const generatedAt = sealData.ga; 
-  
-    if (!generatedAt) {
-      return { priceUpdate: 'N/A' };
+  useEffect(() => {
+    if (sealData.ga) {
+      const date = new Date(sealData.ga);
+      setClientTime(date.toLocaleString());
     }
-    
-    const date = new Date(generatedAt);
-    
-    return {
-      priceUpdate: date.toLocaleString()
-    };
-  };
+  }, [sealData.ga]);
 
   return (
     <>
@@ -536,7 +530,7 @@ export default function SorarePlayerSealData({ sealData }) {
         <div className="header-section">
           <div className="update-info">
             <div className="update-line">Seal Values Updated Daily</div>
-            <div className="update-line">Last Price Update: {getLastUpdateTimes().priceUpdate}</div>
+            <div className="update-line">Last Price Update: {clientTime || 'Loading...'}</div>
           </div>
           <div className="update-info">
             <div className="update-line">&#9888; Always check the seal value before buying!</div>
