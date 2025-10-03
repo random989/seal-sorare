@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import fs from 'fs';
 import path from 'path';
+import { Analytics } from "@vercel/analytics/react"
 
 export async function getStaticProps() {
   // Read the original JSON file
@@ -229,6 +230,7 @@ export default function SorarePlayerSealData({ sealData }) {
 
   return (
     <>
+      <Analytics />
       <style jsx global>{`
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
