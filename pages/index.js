@@ -41,7 +41,6 @@ export async function getStaticProps() {
     ga: originalData.generated_at,     // generated_at
     summary: originalData.summary,     
     players: {
-      '5_seal': originalData.players['5_seal']?.map(optimizePlayer) || [],
       '20_seal': originalData.players['20_seal']?.map(optimizePlayer) || [],
       '50_seal': originalData.players['50_seal']?.map(optimizePlayer) || [],
       '200_seal': originalData.players['200_seal']?.map(optimizePlayer) || [],
@@ -89,11 +88,6 @@ export default function SorarePlayerSealData({ sealData }) {
     setFilters(prev => {
       const newFilters = { ...prev, [filterType]: value };
       
-      // If switching to Limited price type while 5 seal is selected, reset to 'all'
-      if (filterType === 'priceType' && value === 'limited' && prev.seal === '5') {
-        newFilters.seal = 'all';
-      }
-      
       return newFilters;
     });
   };
@@ -133,11 +127,10 @@ export default function SorarePlayerSealData({ sealData }) {
 
     // Get players based on seal filter
     if (filters.seal === 'all') {
-      const seal5 = sealData.players['5_seal'] || [];
       const seal20 = sealData.players['20_seal'] || [];
       const seal50 = sealData.players['50_seal'] || [];
       const seal200 = sealData.players['200_seal'] || [];
-      allPlayers = [...seal5, ...seal20, ...seal50, ...seal200];
+      allPlayers = [...seal20, ...seal50, ...seal200];
     } else {
       allPlayers = [...(sealData.players[`${filters.seal}_seal`] || [])];
     }
@@ -549,10 +542,6 @@ export default function SorarePlayerSealData({ sealData }) {
           </div>
           <div className="summary-info">
             <div className="summary-item">
-              <span className="summary-number">{sealData.summary?.['5_seal_count'] || 0}</span>
-              <span className="summary-label">5 Seal Players</span>
-            </div>
-            <div className="summary-item">
               <span className="summary-number">{sealData.summary?.['20_seal_count'] || 0}</span>
               <span className="summary-label">20 Seal Players</span>
             </div>
@@ -603,12 +592,6 @@ export default function SorarePlayerSealData({ sealData }) {
                 className={filters.seal === 'all' ? 'active' : ''}
                 onClick={() => handleFilterChange('seal', 'all')}
               >All</button>
-              {filters.priceType !== 'limited' && (
-                <button 
-                  className={filters.seal === '5' ? 'active' : ''}
-                  onClick={() => handleFilterChange('seal', '5')}
-                >5</button>
-              )}
               <button 
                 className={filters.seal === '20' ? 'active' : ''}
                 onClick={() => handleFilterChange('seal', '20')}
