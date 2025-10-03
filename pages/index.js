@@ -221,17 +221,15 @@ export default function SorarePlayerSealData({ sealData }) {
 
   const getLastUpdateTimes = () => {
     const generatedAt = sealData.ga; 
-    
-    let priceUpdateTime = generatedAt;
-    
-    if (priceUpdateTime) {
-      const date = new Date(priceUpdateTime);
-      date.setHours(date.getHours() + 1);
-      priceUpdateTime = date.toISOString();
+  
+    if (!generatedAt) {
+      return { priceUpdate: 'N/A' };
     }
     
+    const date = new Date(generatedAt);
+    
     return {
-      priceUpdate: priceUpdateTime ? new Date(priceUpdateTime).toLocaleString() : 'N/A'
+      priceUpdate: date.toLocaleString()
     };
   };
 
@@ -539,6 +537,9 @@ export default function SorarePlayerSealData({ sealData }) {
           <div className="update-info">
             <div className="update-line">Seal Values Updated Daily</div>
             <div className="update-line">Last Price Update: {getLastUpdateTimes().priceUpdate}</div>
+          </div>
+          <div className="update-info">
+            <div className="update-line">&#9888; Always check the seal value before buying!</div>
           </div>
           <div className="summary-info">
             <div className="summary-item">
