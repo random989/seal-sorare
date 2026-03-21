@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T22:53:34.054861+00:00",
+  "generated_at": "2026-03-21T23:50:35.029599+00:00",
   "update_type": "price_update",
   "players": {
     "20_seal": [
@@ -140,7 +140,7 @@
         "slug_rare": "guillermo-alfonso-maripan-loaysa-2024-rare-1",
         "slug_superrare": "guillermo-alfonso-maripan-loaysa-2024-super_rare-1",
         "price_limited_eur": 0.52,
-        "price_rare_eur": 3.88,
+        "price_rare_eur": 3.0,
         "price_superrare_eur": null
       },
       {
@@ -1149,7 +1149,7 @@
         "slug_superrare": "matthias-phaeton-2022-super_rare-1",
         "price_limited_eur": 0.6,
         "price_rare_eur": 862.7,
-        "price_superrare_eur": 18.75
+        "price_superrare_eur": 18.94
       },
       {
         "slug": "mario-garcia-alvear",
@@ -1429,7 +1429,7 @@
         "slug_superrare": "matheus-nascimento-de-paula-2025-super_rare-1",
         "price_limited_eur": 0.68,
         "price_rare_eur": null,
-        "price_superrare_eur": 39.73
+        "price_superrare_eur": 39.92
       },
       {
         "slug": "stefan-frei",
@@ -1849,7 +1849,7 @@
         "slug_superrare": "yuya-oki-2020-super_rare-1",
         "price_limited_eur": 0.74,
         "price_rare_eur": 6.0,
-        "price_superrare_eur": 144.45
+        "price_superrare_eur": 145.0
       },
       {
         "slug": "oliver-torres-munoz",
@@ -2016,7 +2016,7 @@
         "slug_rare": "adam-daghim-2025-rare-1",
         "slug_superrare": "adam-daghim-2025-super_rare-1",
         "price_limited_eur": 0.74,
-        "price_rare_eur": 9.91,
+        "price_rare_eur": 9.0,
         "price_superrare_eur": 128.3
       },
       {
@@ -2241,7 +2241,7 @@
         "slug_superrare": "gabriel-martinez-aguilera-2025-super_rare-1",
         "price_limited_eur": 0.79,
         "price_rare_eur": 6.5,
-        "price_superrare_eur": 87.63
+        "price_superrare_eur": null
       },
       {
         "slug": "aaron-ciammaglichella",
@@ -2297,7 +2297,7 @@
         "slug_superrare": "emerson-palmieri-dos-santos-2025-super_rare-1",
         "price_limited_eur": 0.8,
         "price_rare_eur": 4.46,
-        "price_superrare_eur": 58.67
+        "price_superrare_eur": 58.86
       },
       {
         "slug": "dane-murray",
@@ -2772,7 +2772,7 @@
         "slug_rare": "tygo-land-2025-rare-1",
         "slug_superrare": "tygo-land-2025-super_rare-1",
         "price_limited_eur": 0.85,
-        "price_rare_eur": 5.94,
+        "price_rare_eur": 6.0,
         "price_superrare_eur": 68.95
       },
       {
@@ -4313,7 +4313,7 @@
         "slug_superrare": "nicolas-gonzalez-iglesias-2025-super_rare-1",
         "price_limited_eur": 0.99,
         "price_rare_eur": 7.98,
-        "price_superrare_eur": 67.58
+        "price_superrare_eur": 67.99
       },
       {
         "slug": "zafer-gorgen",
@@ -4943,7 +4943,7 @@
         "slug_superrare": "alvaro-nunez-cobo-2025-super_rare-1",
         "price_limited_eur": 1.0,
         "price_rare_eur": 6.13,
-        "price_superrare_eur": 77.05
+        "price_superrare_eur": 77.24
       },
       {
         "slug": "alexander-nollenberger",
@@ -5166,7 +5166,7 @@
         "slug_rare": "alan-forneris-2025-rare-1",
         "slug_superrare": "alan-forneris-2025-super_rare-1",
         "price_limited_eur": 1.0,
-        "price_rare_eur": 9.63,
+        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -5322,20 +5322,6 @@
         "price_limited_eur": 1.04,
         "price_rare_eur": null,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "ramy-bensebaini",
-        "name": "Ramy Bensebaini",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-14 09:49:36",
-        "slug_limited": "ramy-bensebaini-2024-limited-1",
-        "slug_rare": "ramy-bensebaini-2024-rare-1",
-        "slug_superrare": "ramy-bensebaini-2024-super_rare-1",
-        "price_limited_eur": 1.05,
-        "price_rare_eur": 7.0,
-        "price_superrare_eur": 38.99
       },
       {
         "slug": "mateo-joseph-fernandez-regatillo",
@@ -5688,6 +5674,20 @@
         "price_superrare_eur": 35.28
       },
       {
+        "slug": "ramy-bensebaini",
+        "name": "Ramy Bensebaini",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-14 09:49:36",
+        "slug_limited": "ramy-bensebaini-2024-limited-1",
+        "slug_rare": "ramy-bensebaini-2024-rare-1",
+        "slug_superrare": "ramy-bensebaini-2024-super_rare-1",
+        "price_limited_eur": 1.1,
+        "price_rare_eur": 7.0,
+        "price_superrare_eur": 38.99
+      },
+      {
         "slug": "yota-sato",
         "name": "Yota Sato",
         "seal": "20",
@@ -5756,20 +5756,6 @@
         "price_limited_eur": 1.1,
         "price_rare_eur": 3.39,
         "price_superrare_eur": 100.0
-      },
-      {
-        "slug": "marc-guiu-paz",
-        "name": "Marc Guiu",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-07 08:52:51",
-        "slug_limited": "marc-guiu-paz-2025-limited-1",
-        "slug_rare": "marc-guiu-paz-2025-rare-1",
-        "slug_superrare": "marc-guiu-paz-2025-super_rare-1",
-        "price_limited_eur": 1.1,
-        "price_rare_eur": 9.99,
-        "price_superrare_eur": 60.34
       },
       {
         "slug": "pablo-solari",
@@ -5867,7 +5853,7 @@
         "slug_superrare": "sven-ulreich-2020-super_rare-1",
         "price_limited_eur": 1.11,
         "price_rare_eur": 3.55,
-        "price_superrare_eur": 45.49
+        "price_superrare_eur": 45.67
       },
       {
         "slug": "christian-dannemann-eriksen",
@@ -6245,7 +6231,7 @@
         "slug_superrare": "jeremie-boga-2025-super_rare-1",
         "price_limited_eur": 1.14,
         "price_rare_eur": 10.0,
-        "price_superrare_eur": 69.63
+        "price_superrare_eur": 69.81
       },
       {
         "slug": "pedro-jeampierre-vite-uca",
@@ -6791,7 +6777,7 @@
         "slug_superrare": "jimmy-gerardo-medranda-obando-2023-super_rare-1",
         "price_limited_eur": 1.2,
         "price_rare_eur": 3.93,
-        "price_superrare_eur": null
+        "price_superrare_eur": 3.53
       },
       {
         "slug": "hyun-jun-yang",
@@ -6834,20 +6820,6 @@
         "price_limited_eur": 1.2,
         "price_rare_eur": 9.75,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "mohamed-bayo",
-        "name": "Mohamed Bayo",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-14 08:56:46",
-        "slug_limited": "mohamed-bayo-2025-limited-1",
-        "slug_rare": "mohamed-bayo-2025-rare-1",
-        "slug_superrare": "mohamed-bayo-2025-super_rare-1",
-        "price_limited_eur": 1.2,
-        "price_rare_eur": 4.0,
-        "price_superrare_eur": 299.0
       },
       {
         "slug": "todd-cantwell",
@@ -6990,20 +6962,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "ismael-kone-2002-06-06",
-        "name": "Ismaël Koné",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-15 09:52:05",
-        "slug_limited": "ismael-kone-2002-06-06-2024-limited-1",
-        "slug_rare": "ismael-kone-2002-06-06-2024-rare-1",
-        "slug_superrare": "ismael-kone-2002-06-06-2024-super_rare-1",
-        "price_limited_eur": 1.2,
-        "price_rare_eur": 5.01,
-        "price_superrare_eur": 100.0
-      },
-      {
         "slug": "dominic-solanke",
         "name": "Dominic Solanke",
         "seal": "20",
@@ -7016,6 +6974,20 @@
         "price_limited_eur": 1.2,
         "price_rare_eur": 8.06,
         "price_superrare_eur": 82.44
+      },
+      {
+        "slug": "marc-guiu-paz",
+        "name": "Marc Guiu",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-07 08:52:51",
+        "slug_limited": "marc-guiu-paz-2025-limited-1",
+        "slug_rare": "marc-guiu-paz-2025-rare-1",
+        "slug_superrare": "marc-guiu-paz-2025-super_rare-1",
+        "price_limited_eur": 1.2,
+        "price_rare_eur": 9.99,
+        "price_superrare_eur": 60.34
       },
       {
         "slug": "daniel-munie",
@@ -7200,6 +7172,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "shamal-george",
+        "name": "Shamal George",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-01-15 09:51:17",
+        "slug_limited": "shamal-george-2025-limited-2",
+        "slug_rare": "shamal-george-2025-rare-1",
+        "slug_superrare": "shamal-george-2025-super_rare-1",
+        "price_limited_eur": 1.21,
+        "price_rare_eur": 9.74,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "josip-mitrovic",
         "name": "Josip Mitrović",
         "seal": "20",
@@ -7242,6 +7228,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "chihiro-kato",
+        "name": "Chihiro Kato",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-14 09:49:28",
+        "slug_limited": "chihiro-kato-2021-limited-1",
+        "slug_rare": "chihiro-kato-2021-rare-1",
+        "slug_superrare": "chihiro-kato-2021-super_rare-1",
+        "price_limited_eur": 1.23,
+        "price_rare_eur": 8.96,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "dmitriy-chistyakov",
         "name": "Dmitri Chistyakov",
         "seal": "20",
@@ -7267,20 +7267,6 @@
         "slug_superrare": "diego-alexander-gomez-amarilla-2025-super_rare-1",
         "price_limited_eur": 1.23,
         "price_rare_eur": 14.34,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "chihiro-kato",
-        "name": "Chihiro Kato",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-14 09:49:28",
-        "slug_limited": "chihiro-kato-2021-limited-1",
-        "slug_rare": "chihiro-kato-2021-rare-1",
-        "slug_superrare": "chihiro-kato-2021-super_rare-1",
-        "price_limited_eur": 1.24,
-        "price_rare_eur": 8.96,
         "price_superrare_eur": null
       },
       {
@@ -7323,6 +7309,20 @@
         "slug_superrare": "thiago-martins-bueno-2020-super_rare-1",
         "price_limited_eur": 1.25,
         "price_rare_eur": 4.64,
+        "price_superrare_eur": 324.55
+      },
+      {
+        "slug": "eddie-livington-segura-martinez",
+        "name": "Eddie Segura",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-02 10:08:41",
+        "slug_limited": "eddie-livington-segura-martinez-2025-limited-1",
+        "slug_rare": "eddie-livington-segura-martinez-2020-rare-1",
+        "slug_superrare": "eddie-livington-segura-martinez-2020-super_rare-1",
+        "price_limited_eur": 1.25,
+        "price_rare_eur": 1.49,
         "price_superrare_eur": null
       },
       {
@@ -7560,7 +7560,7 @@
         "slug_rare": "albert-rusnak-2020-rare-1",
         "slug_superrare": "albert-rusnak-2020-super_rare-1",
         "price_limited_eur": 1.27,
-        "price_rare_eur": 5.57,
+        "price_rare_eur": 9.5,
         "price_superrare_eur": null
       },
       {
@@ -7574,8 +7574,8 @@
         "slug_rare": "dominik-fitz-2025-rare-1",
         "slug_superrare": "dominik-fitz-2025-super_rare-1",
         "price_limited_eur": 1.27,
-        "price_rare_eur": 11.51,
-        "price_superrare_eur": 61.27
+        "price_rare_eur": 12.0,
+        "price_superrare_eur": 100.0
       },
       {
         "slug": "callum-mcgregor",
@@ -7603,20 +7603,6 @@
         "slug_superrare": "ramon-hendriks-2024-super_rare-1",
         "price_limited_eur": 1.27,
         "price_rare_eur": 5.0,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "shamal-george",
-        "name": "Shamal George",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-01-15 09:51:17",
-        "slug_limited": "shamal-george-2025-limited-2",
-        "slug_rare": "shamal-george-2025-rare-1",
-        "slug_superrare": "shamal-george-2025-super_rare-1",
-        "price_limited_eur": 1.27,
-        "price_rare_eur": 9.74,
         "price_superrare_eur": null
       },
       {
@@ -7658,7 +7644,7 @@
         "slug_rare": "olger-armando-escobar-real-2025-rare-1",
         "slug_superrare": "olger-armando-escobar-real-2025-super_rare-1",
         "price_limited_eur": 1.27,
-        "price_rare_eur": 6.41,
+        "price_rare_eur": 6.28,
         "price_superrare_eur": null
       },
       {
@@ -7757,7 +7743,7 @@
         "slug_superrare": "walter-daniel-benitez-2025-super_rare-1",
         "price_limited_eur": 1.28,
         "price_rare_eur": 6.38,
-        "price_superrare_eur": 82.25
+        "price_superrare_eur": 86.71
       },
       {
         "slug": "manuel-fuster-lazaro",
@@ -7897,7 +7883,7 @@
         "slug_superrare": "richarlison-de-andrade-2025-super_rare-1",
         "price_limited_eur": 1.29,
         "price_rare_eur": 14.3,
-        "price_superrare_eur": 56.63
+        "price_superrare_eur": null
       },
       {
         "slug": "sebastien-antoine-luc-salles-lamonge",
@@ -7966,7 +7952,7 @@
         "slug_rare": "orri-steinn-oskarsson-2025-rare-1",
         "slug_superrare": "orri-steinn-oskarsson-2025-super_rare-1",
         "price_limited_eur": 1.29,
-        "price_rare_eur": 5.99,
+        "price_rare_eur": 6.0,
         "price_superrare_eur": 48.35
       },
       {
@@ -8164,6 +8150,20 @@
         "price_limited_eur": 1.3,
         "price_rare_eur": 6.9,
         "price_superrare_eur": 57.56
+      },
+      {
+        "slug": "mohamed-bayo",
+        "name": "Mohamed Bayo",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-14 08:56:46",
+        "slug_limited": "mohamed-bayo-2025-limited-1",
+        "slug_rare": "mohamed-bayo-2025-rare-1",
+        "slug_superrare": "mohamed-bayo-2025-super_rare-1",
+        "price_limited_eur": 1.3,
+        "price_rare_eur": 4.0,
+        "price_superrare_eur": 299.0
       },
       {
         "slug": "giovani-lo-celso",
@@ -8569,7 +8569,7 @@
         "slug_superrare": "callum-hudson-odoi-2025-super_rare-1",
         "price_limited_eur": 1.35,
         "price_rare_eur": 6.59,
-        "price_superrare_eur": 68.7
+        "price_superrare_eur": null
       },
       {
         "slug": "rodrigo-bassani-da-cruz",
@@ -8894,20 +8894,6 @@
         "price_superrare_eur": 87.26
       },
       {
-        "slug": "eddie-livington-segura-martinez",
-        "name": "Eddie Segura",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-02 10:08:41",
-        "slug_limited": "eddie-livington-segura-martinez-2025-limited-1",
-        "slug_rare": "eddie-livington-segura-martinez-2020-rare-1",
-        "slug_superrare": "eddie-livington-segura-martinez-2020-super_rare-1",
-        "price_limited_eur": 1.4,
-        "price_rare_eur": 4.64,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "jasper-schendelaar",
         "name": "Jasper Schendelaar",
         "seal": "20",
@@ -8990,6 +8976,20 @@
         "price_limited_eur": 1.4,
         "price_rare_eur": 4.94,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "ismael-kone-2002-06-06",
+        "name": "Ismaël Koné",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-15 09:52:05",
+        "slug_limited": "ismael-kone-2002-06-06-2024-limited-1",
+        "slug_rare": "ismael-kone-2002-06-06-2024-rare-1",
+        "slug_superrare": "ismael-kone-2002-06-06-2024-super_rare-1",
+        "price_limited_eur": 1.4,
+        "price_rare_eur": 5.01,
+        "price_superrare_eur": 100.0
       },
       {
         "slug": "florian-kastenmeier",
@@ -9114,7 +9114,7 @@
         "slug_rare": "aleksandr-zuev-2021-rare-1",
         "slug_superrare": "aleksandr-zuev-2021-super_rare-1",
         "price_limited_eur": 1.41,
-        "price_rare_eur": 82.71,
+        "price_rare_eur": 82.25,
         "price_superrare_eur": null
       },
       {
@@ -9282,7 +9282,7 @@
         "slug_rare": "sebastian-szymanski-2020-rare-1",
         "slug_superrare": "sebastian-szymanski-2020-super_rare-1",
         "price_limited_eur": 1.45,
-        "price_rare_eur": 8.84,
+        "price_rare_eur": 15.0,
         "price_superrare_eur": null
       },
       {
@@ -9325,7 +9325,7 @@
         "slug_superrare": "anssumane-fati-2025-super_rare-1",
         "price_limited_eur": 1.45,
         "price_rare_eur": 5.88,
-        "price_superrare_eur": 70.74
+        "price_superrare_eur": 71.0
       },
       {
         "slug": "juan-ferney-otero-tovar",
@@ -9548,7 +9548,7 @@
         "slug_rare": "moon-hwan-kim-2020-rare-1",
         "slug_superrare": "moon-hwan-kim-2020-super_rare-1",
         "price_limited_eur": 1.47,
-        "price_rare_eur": null,
+        "price_rare_eur": 9.9,
         "price_superrare_eur": null
       },
       {
@@ -9926,7 +9926,7 @@
         "slug_rare": "matias-ezequiel-dituro-2025-rare-1",
         "slug_superrare": "matias-ezequiel-dituro-2025-super_rare-1",
         "price_limited_eur": 1.49,
-        "price_rare_eur": 18.2,
+        "price_rare_eur": 18.38,
         "price_superrare_eur": 45.3
       },
       {
@@ -10138,20 +10138,6 @@
         "price_limited_eur": 1.49,
         "price_rare_eur": 8.25,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "nick-olij",
-        "name": "Nick Olij",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2025-08-09 16:11:35",
-        "slug_limited": "nick-olij-2025-limited-3",
-        "slug_rare": "nick-olij-2025-rare-1",
-        "slug_superrare": "nick-olij-2025-super_rare-1",
-        "price_limited_eur": 1.49,
-        "price_rare_eur": 13.93,
-        "price_superrare_eur": 89.99
       },
       {
         "slug": "hugo-larsson",
@@ -10756,6 +10742,20 @@
         "price_superrare_eur": 82.67
       },
       {
+        "slug": "kasper-poul-molgaard-jorgensen",
+        "name": "Kasper Jørgensen",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-11 09:04:36",
+        "slug_limited": "kasper-poul-molgaard-jorgensen-2025-limited-1",
+        "slug_rare": "kasper-poul-molgaard-jorgensen-2025-rare-1",
+        "slug_superrare": "kasper-poul-molgaard-jorgensen-2025-super_rare-1",
+        "price_limited_eur": 1.53,
+        "price_rare_eur": 5.4,
+        "price_superrare_eur": 75.2
+      },
+      {
         "slug": "adam-fernando-bareiro-gamarra",
         "name": "Adam Bareiro",
         "seal": "20",
@@ -10809,20 +10809,6 @@
         "slug_superrare": "airton-moises-santos-sousa-2021-super_rare-1",
         "price_limited_eur": 1.54,
         "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "thomas-kaminski",
-        "name": "Thomas Kaminski",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-15 08:58:21",
-        "slug_limited": "thomas-kaminski-2023-limited-2",
-        "slug_rare": "thomas-kaminski-2019-rare-1",
-        "slug_superrare": "thomas-kaminski-2019-super_rare-1",
-        "price_limited_eur": 1.55,
-        "price_rare_eur": 7.56,
         "price_superrare_eur": null
       },
       {
@@ -11006,20 +10992,6 @@
         "price_limited_eur": 1.58,
         "price_rare_eur": 10.48,
         "price_superrare_eur": 125.78
-      },
-      {
-        "slug": "kasper-poul-molgaard-jorgensen",
-        "name": "Kasper Jørgensen",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-11 09:04:36",
-        "slug_limited": "kasper-poul-molgaard-jorgensen-2025-limited-1",
-        "slug_rare": "kasper-poul-molgaard-jorgensen-2025-rare-1",
-        "slug_superrare": "kasper-poul-molgaard-jorgensen-2025-super_rare-1",
-        "price_limited_eur": 1.58,
-        "price_rare_eur": 5.4,
-        "price_superrare_eur": 75.2
       },
       {
         "slug": "marko-malenica",
@@ -11414,34 +11386,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "leopold-querfeld",
-        "name": "Leopold Querfeld",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-01-24 09:40:24",
-        "slug_limited": "leopold-querfeld-2024-limited-1",
-        "slug_rare": "leopold-querfeld-2024-rare-1",
-        "slug_superrare": "leopold-querfeld-2024-super_rare-1",
-        "price_limited_eur": 1.61,
-        "price_rare_eur": 14.5,
-        "price_superrare_eur": 111.4
-      },
-      {
-        "slug": "masaaki-higashiguchi",
-        "name": "Masaaki Higashiguchi",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-05 09:06:35",
-        "slug_limited": "masaaki-higashiguchi-2025-limited-3",
-        "slug_rare": "masaaki-higashiguchi-2020-rare-1",
-        "slug_superrare": "masaaki-higashiguchi-2020-super_rare-1",
-        "price_limited_eur": 1.62,
-        "price_rare_eur": 7.19,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "alexandru-iulian-maxim",
         "name": "Alexandru Maxim",
         "seal": "20",
@@ -11831,7 +11775,7 @@
         "slug_superrare": "philippe-paulin-keny-2023-super_rare-1",
         "price_limited_eur": 1.66,
         "price_rare_eur": null,
-        "price_superrare_eur": 146.86
+        "price_superrare_eur": 147.23
       },
       {
         "slug": "esteban-salles",
@@ -11888,6 +11832,20 @@
         "price_limited_eur": 1.67,
         "price_rare_eur": 11.89,
         "price_superrare_eur": 89.12
+      },
+      {
+        "slug": "masaaki-higashiguchi",
+        "name": "Masaaki Higashiguchi",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-05 09:06:35",
+        "slug_limited": "masaaki-higashiguchi-2025-limited-3",
+        "slug_rare": "masaaki-higashiguchi-2020-rare-1",
+        "slug_superrare": "masaaki-higashiguchi-2020-super_rare-1",
+        "price_limited_eur": 1.67,
+        "price_rare_eur": 7.19,
+        "price_superrare_eur": null
       },
       {
         "slug": "noa-lang",
@@ -12072,6 +12030,20 @@
         "price_superrare_eur": 89.47
       },
       {
+        "slug": "leopold-querfeld",
+        "name": "Leopold Querfeld",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-01-24 09:40:24",
+        "slug_limited": "leopold-querfeld-2024-limited-1",
+        "slug_rare": "leopold-querfeld-2024-rare-1",
+        "slug_superrare": "leopold-querfeld-2024-super_rare-1",
+        "price_limited_eur": 1.67,
+        "price_rare_eur": 14.5,
+        "price_superrare_eur": 111.4
+      },
+      {
         "slug": "alexander-ernesto-aravena-guzman",
         "name": "Alexander Aravena",
         "seal": "20",
@@ -12156,6 +12128,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "cabral-jones-carter",
+        "name": "Cabral Carter",
+        "seal": "20",
+        "seal_changed": 1,
+        "previous_seal": "5",
+        "seal_change_date": "2026-03-21 08:58:28",
+        "slug_limited": "cabral-jones-carter-2026-limited-1",
+        "slug_rare": "cabral-jones-carter-2026-rare-1",
+        "slug_superrare": "cabral-jones-carter-2026-super_rare-1",
+        "price_limited_eur": 1.67,
+        "price_rare_eur": 6.52,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "henrikh-mkhitaryan",
         "name": "Henrikh Mkhitaryan",
         "seal": "20",
@@ -12180,7 +12166,7 @@
         "slug_rare": "joshua-zirkzee-2020-rare-1",
         "slug_superrare": "joshua-zirkzee-2020-super_rare-1",
         "price_limited_eur": 1.68,
-        "price_rare_eur": 15.07,
+        "price_rare_eur": 15.04,
         "price_superrare_eur": null
       },
       {
@@ -12349,7 +12335,7 @@
         "slug_superrare": "washington-omar-aguerre-lima-2021-super_rare-1",
         "price_limited_eur": 1.7,
         "price_rare_eur": null,
-        "price_superrare_eur": 226.88
+        "price_superrare_eur": 229.11
       },
       {
         "slug": "antonios-papadopoulos",
@@ -12377,7 +12363,7 @@
         "slug_superrare": "rocco-reitz-2024-super_rare-1",
         "price_limited_eur": 1.7,
         "price_rare_eur": 9.99,
-        "price_superrare_eur": 63.87
+        "price_superrare_eur": null
       },
       {
         "slug": "vladimir-panov",
@@ -12464,6 +12450,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "murillo-santiago-costa-dos-santos",
+        "name": "Murillo",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-01-14 09:50:43",
+        "slug_limited": "murillo-santiago-costa-dos-santos-2025-limited-1",
+        "slug_rare": "murillo-santiago-costa-dos-santos-2025-rare-1",
+        "slug_superrare": "murillo-santiago-costa-dos-santos-2025-super_rare-1",
+        "price_limited_eur": 1.7,
+        "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "alexis-claude-maurice",
         "name": "Alexis Claude-Maurice",
         "seal": "20",
@@ -12488,7 +12488,7 @@
         "slug_rare": "corentin-jean-2023-rare-1",
         "slug_superrare": "corentin-jean-2023-super_rare-1",
         "price_limited_eur": 1.7,
-        "price_rare_eur": 964.87,
+        "price_rare_eur": 948.47,
         "price_superrare_eur": null
       },
       {
@@ -12674,20 +12674,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "leonardo-spinazzola",
-        "name": "Leonardo Spinazzola",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-06 09:00:36",
-        "slug_limited": "leonardo-spinazzola-2024-limited-1",
-        "slug_rare": "leonardo-spinazzola-2020-rare-1",
-        "slug_superrare": "leonardo-spinazzola-2020-super_rare-1",
-        "price_limited_eur": 1.73,
-        "price_rare_eur": 5.57,
-        "price_superrare_eur": 59.6
-      },
-      {
         "slug": "lucas-tolentino-coelho-de-lima",
         "name": "Lucas Paquetá",
         "seal": "20",
@@ -12713,7 +12699,7 @@
         "slug_superrare": "cristian-roldan-2020-super_rare-1",
         "price_limited_eur": 1.73,
         "price_rare_eur": 7.83,
-        "price_superrare_eur": 98.4
+        "price_superrare_eur": 98.22
       },
       {
         "slug": "ronald-federico-araujo-da-silva",
@@ -13024,6 +13010,20 @@
         "price_superrare_eur": 117.71
       },
       {
+        "slug": "leonardo-spinazzola",
+        "name": "Leonardo Spinazzola",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-06 09:00:36",
+        "slug_limited": "leonardo-spinazzola-2024-limited-1",
+        "slug_rare": "leonardo-spinazzola-2020-rare-1",
+        "slug_superrare": "leonardo-spinazzola-2020-super_rare-1",
+        "price_limited_eur": 1.74,
+        "price_rare_eur": 5.57,
+        "price_superrare_eur": 59.6
+      },
+      {
         "slug": "david-ngabi-mokwa-ntusu",
         "name": "David Mokwa",
         "seal": "20",
@@ -13063,20 +13063,6 @@
         "slug_superrare": "wenderson-rodrigues-do-nascimento-galeno-2024-super_rare-1",
         "price_limited_eur": 1.75,
         "price_rare_eur": 6.89,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "murillo-santiago-costa-dos-santos",
-        "name": "Murillo",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-01-14 09:50:43",
-        "slug_limited": "murillo-santiago-costa-dos-santos-2025-limited-1",
-        "slug_rare": "murillo-santiago-costa-dos-santos-2025-rare-1",
-        "slug_superrare": "murillo-santiago-costa-dos-santos-2025-super_rare-1",
-        "price_limited_eur": 1.75,
-        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -13202,7 +13188,7 @@
         "slug_rare": "oumar-kalifa-pona-2025-rare-1",
         "slug_superrare": "oumar-kalifa-pona-2025-super_rare-1",
         "price_limited_eur": 1.79,
-        "price_rare_eur": 8.84,
+        "price_rare_eur": null,
         "price_superrare_eur": 69.07
       },
       {
@@ -13332,20 +13318,6 @@
         "price_superrare_eur": 44.0
       },
       {
-        "slug": "enzo-millot",
-        "name": "Enzo Millot",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-04 10:04:48",
-        "slug_limited": "enzo-millot-2024-limited-1",
-        "slug_rare": "enzo-millot-2024-rare-1",
-        "slug_superrare": "enzo-millot-2024-super_rare-1",
-        "price_limited_eur": 1.8,
-        "price_rare_eur": 6.87,
-        "price_superrare_eur": 91.35
-      },
-      {
         "slug": "roman-burki",
         "name": "Roman Bürki",
         "seal": "20",
@@ -13370,7 +13342,7 @@
         "slug_rare": "rey-manaj-2022-rare-1",
         "slug_superrare": "rey-manaj-2022-super_rare-1",
         "price_limited_eur": 1.8,
-        "price_rare_eur": 3.5,
+        "price_rare_eur": 3.29,
         "price_superrare_eur": null
       },
       {
@@ -13990,6 +13962,20 @@
         "price_superrare_eur": 69.63
       },
       {
+        "slug": "nick-olij",
+        "name": "Nick Olij",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2025-08-09 16:11:35",
+        "slug_limited": "nick-olij-2025-limited-3",
+        "slug_rare": "nick-olij-2025-rare-1",
+        "slug_superrare": "nick-olij-2025-super_rare-1",
+        "price_limited_eur": 1.86,
+        "price_rare_eur": 13.93,
+        "price_superrare_eur": 89.99
+      },
+      {
         "slug": "lewis-miley",
         "name": "Lewis Miley",
         "seal": "20",
@@ -14086,6 +14072,20 @@
         "price_limited_eur": 1.86,
         "price_rare_eur": null,
         "price_superrare_eur": 159.0
+      },
+      {
+        "slug": "timothy-tillman",
+        "name": "Timothy Tillman",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-11 10:13:00",
+        "slug_limited": "timothy-tillman-2025-limited-1",
+        "slug_rare": "timothy-tillman-2025-rare-1",
+        "slug_superrare": "timothy-tillman-2025-super_rare-1",
+        "price_limited_eur": 1.87,
+        "price_rare_eur": 5.69,
+        "price_superrare_eur": null
       },
       {
         "slug": "petar-zovko",
@@ -14267,7 +14267,7 @@
         "slug_superrare": "pau-lopez-sabata-2020-super_rare-1",
         "price_limited_eur": 1.9,
         "price_rare_eur": 8.91,
-        "price_superrare_eur": 109.54
+        "price_superrare_eur": 109.73
       },
       {
         "slug": "jesus-manuel-medina-maldonado",
@@ -14309,7 +14309,7 @@
         "slug_superrare": "dodi-lukebakio-2025-super_rare-1",
         "price_limited_eur": 1.9,
         "price_rare_eur": null,
-        "price_superrare_eur": 89.68
+        "price_superrare_eur": 89.86
       },
       {
         "slug": "melayro-bogarde",
@@ -14547,7 +14547,7 @@
         "slug_superrare": "sem-steijn-2020-super_rare-1",
         "price_limited_eur": 1.92,
         "price_rare_eur": 6.02,
-        "price_superrare_eur": null
+        "price_superrare_eur": 59.23
       },
       {
         "slug": "mexx-meerdink",
@@ -14900,20 +14900,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "cabral-jones-carter",
-        "name": "Cabral Carter",
-        "seal": "20",
-        "seal_changed": 1,
-        "previous_seal": "5",
-        "seal_change_date": "2026-03-21 08:58:28",
-        "slug_limited": "cabral-jones-carter-2026-limited-1",
-        "slug_rare": "cabral-jones-carter-2026-rare-1",
-        "slug_superrare": "cabral-jones-carter-2026-super_rare-1",
-        "price_limited_eur": 1.95,
-        "price_rare_eur": 6.52,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "alexander-bonetig",
         "name": "Alexander Bonetig",
         "seal": "20",
@@ -14970,20 +14956,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "timothy-tillman",
-        "name": "Timothy Tillman",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-11 10:13:00",
-        "slug_limited": "timothy-tillman-2025-limited-1",
-        "slug_rare": "timothy-tillman-2025-rare-1",
-        "slug_superrare": "timothy-tillman-2025-super_rare-1",
-        "price_limited_eur": 1.97,
-        "price_rare_eur": 5.69,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "aleksandr-golovin",
         "name": "Aleksandr Golovin",
         "seal": "20",
@@ -14996,6 +14968,20 @@
         "price_limited_eur": 1.98,
         "price_rare_eur": 12.0,
         "price_superrare_eur": 160.79
+      },
+      {
+        "slug": "rolando-mandragora",
+        "name": "Rolando Mandragora",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-19 10:09:24",
+        "slug_limited": "rolando-mandragora-2024-limited-1",
+        "slug_rare": "rolando-mandragora-2024-rare-1",
+        "slug_superrare": "rolando-mandragora-2024-super_rare-1",
+        "price_limited_eur": 1.98,
+        "price_rare_eur": 11.6,
+        "price_superrare_eur": null
       },
       {
         "slug": "german-parreno-boix",
@@ -15460,6 +15446,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "anastasios-douvikas",
+        "name": "Tasos Douvikas",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-01 09:47:02",
+        "slug_limited": "anastasios-douvikas-2024-limited-1",
+        "slug_rare": "anastasios-douvikas-2024-rare-1",
+        "slug_superrare": "anastasios-douvikas-2024-super_rare-1",
+        "price_limited_eur": 2.0,
+        "price_rare_eur": 7.06,
+        "price_superrare_eur": 149.0
+      },
+      {
         "slug": "christopher-nkunku",
         "name": "Christopher Nkunku",
         "seal": "20",
@@ -15471,7 +15471,7 @@
         "slug_superrare": "christopher-nkunku-2025-super_rare-1",
         "price_limited_eur": 2.0,
         "price_rare_eur": 14.86,
-        "price_superrare_eur": 81.69
+        "price_superrare_eur": 81.51
       },
       {
         "slug": "stefan-ortega-moreno",
@@ -15486,20 +15486,6 @@
         "price_limited_eur": 2.0,
         "price_rare_eur": 11.84,
         "price_superrare_eur": 225.0
-      },
-      {
-        "slug": "rolando-mandragora",
-        "name": "Rolando Mandragora",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-19 10:09:24",
-        "slug_limited": "rolando-mandragora-2024-limited-1",
-        "slug_rare": "rolando-mandragora-2024-rare-1",
-        "slug_superrare": "rolando-mandragora-2024-super_rare-1",
-        "price_limited_eur": 2.0,
-        "price_rare_eur": 11.6,
-        "price_superrare_eur": null
       },
       {
         "slug": "sacha-boey",
@@ -15796,6 +15782,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "hamza-igmane",
+        "name": "Hamza Igamane",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-01-29 10:06:06",
+        "slug_limited": "hamza-igmane-2025-limited-1",
+        "slug_rare": "hamza-igmane-2025-rare-1",
+        "slug_superrare": "hamza-igmane-2025-super_rare-1",
+        "price_limited_eur": 2.0,
+        "price_rare_eur": 16.52,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "ayrton-enrique-costa",
         "name": "Ayrton Costa",
         "seal": "20",
@@ -15820,7 +15820,7 @@
         "slug_rare": "jeison-estiven-quinones-botina-2025-rare-1",
         "slug_superrare": "jeison-estiven-quinones-botina-2025-super_rare-1",
         "price_limited_eur": 2.0,
-        "price_rare_eur": 10.77,
+        "price_rare_eur": 10.4,
         "price_superrare_eur": null
       },
       {
@@ -16214,20 +16214,6 @@
         "price_limited_eur": 2.06,
         "price_rare_eur": 39.93,
         "price_superrare_eur": 134.23
-      },
-      {
-        "slug": "anastasios-douvikas",
-        "name": "Tasos Douvikas",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-01 09:47:02",
-        "slug_limited": "anastasios-douvikas-2024-limited-1",
-        "slug_rare": "anastasios-douvikas-2024-rare-1",
-        "slug_superrare": "anastasios-douvikas-2024-super_rare-1",
-        "price_limited_eur": 2.07,
-        "price_rare_eur": 7.06,
-        "price_superrare_eur": 149.0
       },
       {
         "slug": "thierr-small",
@@ -16790,20 +16776,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "mandela-keita",
-        "name": "Mandela Keita",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-08 09:51:31",
-        "slug_limited": "mandela-keita-2024-limited-2",
-        "slug_rare": "mandela-keita-2024-rare-1",
-        "slug_superrare": "mandela-keita-2024-super_rare-1",
-        "price_limited_eur": 2.2,
-        "price_rare_eur": null,
-        "price_superrare_eur": 205.53
-      },
-      {
         "slug": "anass-salah-eddine",
         "name": "Anass Salah-Eddine",
         "seal": "20",
@@ -17094,7 +17066,7 @@
         "slug_rare": "daniel-bielica-2025-rare-1",
         "slug_superrare": "daniel-bielica-2025-super_rare-1",
         "price_limited_eur": 2.23,
-        "price_rare_eur": 14.67,
+        "price_rare_eur": 14.85,
         "price_superrare_eur": null
       },
       {
@@ -17392,20 +17364,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "sam-surridge",
-        "name": "Samuel Surridge",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-20 09:04:30",
-        "slug_limited": "sam-surridge-2025-limited-1",
-        "slug_rare": "sam-surridge-2025-rare-1",
-        "slug_superrare": "sam-surridge-2025-super_rare-1",
-        "price_limited_eur": 2.3,
-        "price_rare_eur": 18.13,
-        "price_superrare_eur": 129.78
-      },
-      {
         "slug": "taishi-semba",
         "name": "Taishi Semba",
         "seal": "20",
@@ -17658,6 +17616,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "mandela-keita",
+        "name": "Mandela Keita",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-08 09:51:31",
+        "slug_limited": "mandela-keita-2024-limited-2",
+        "slug_rare": "mandela-keita-2024-rare-1",
+        "slug_superrare": "mandela-keita-2024-super_rare-1",
+        "price_limited_eur": 2.39,
+        "price_rare_eur": null,
+        "price_superrare_eur": 207.58
+      },
+      {
         "slug": "amin-boudri",
         "name": "Amin Boudri",
         "seal": "20",
@@ -17879,7 +17851,7 @@
         "slug_superrare": "mario-gila-fuentes-2024-super_rare-1",
         "price_limited_eur": 2.41,
         "price_rare_eur": 17.7,
-        "price_superrare_eur": 143.52
+        "price_superrare_eur": 143.9
       },
       {
         "slug": "baris-alper-yilmaz",
@@ -17893,7 +17865,7 @@
         "slug_superrare": "baris-alper-yilmaz-2025-super_rare-1",
         "price_limited_eur": 2.41,
         "price_rare_eur": 9.09,
-        "price_superrare_eur": 53.66
+        "price_superrare_eur": 54.4
       },
       {
         "slug": "john-bjorkengren",
@@ -17949,6 +17921,20 @@
         "slug_superrare": "alessio-furlanetto-2024-super_rare-1",
         "price_limited_eur": 2.41,
         "price_rare_eur": 21.56,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "matthew-james-corcoran",
+        "name": "Matthew Corcoran",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-18 09:15:36",
+        "slug_limited": "matthew-james-corcoran-2025-limited-1",
+        "slug_rare": "matthew-james-corcoran-2025-rare-1",
+        "slug_superrare": "matthew-james-corcoran-2025-super_rare-1",
+        "price_limited_eur": 2.41,
+        "price_rare_eur": 6.99,
         "price_superrare_eur": null
       },
       {
@@ -18033,7 +18019,7 @@
         "slug_superrare": "mathys-tel-2025-super_rare-1",
         "price_limited_eur": 2.44,
         "price_rare_eur": 21.9,
-        "price_superrare_eur": 239.51
+        "price_superrare_eur": 259.56
       },
       {
         "slug": "lucas-estella-perri",
@@ -18102,7 +18088,7 @@
         "slug_rare": "rafael-cabral-barbosa-2025-rare-1",
         "slug_superrare": "rafael-cabral-barbosa-2025-super_rare-1",
         "price_limited_eur": 2.45,
-        "price_rare_eur": 19.12,
+        "price_rare_eur": 18.93,
         "price_superrare_eur": 299.0
       },
       {
@@ -18186,7 +18172,7 @@
         "slug_rare": "bilal-el-khannous-2024-rare-1",
         "slug_superrare": "bilal-el-khannous-2024-super_rare-1",
         "price_limited_eur": 2.48,
-        "price_rare_eur": 27.89,
+        "price_rare_eur": 27.8,
         "price_superrare_eur": null
       },
       {
@@ -18284,7 +18270,7 @@
         "slug_rare": "matteo-politano-2020-rare-1",
         "slug_superrare": "matteo-politano-2020-super_rare-1",
         "price_limited_eur": 2.5,
-        "price_rare_eur": 3.96,
+        "price_rare_eur": 9.65,
         "price_superrare_eur": null
       },
       {
@@ -18316,18 +18302,18 @@
         "price_superrare_eur": 148.35
       },
       {
-        "slug": "mikel-merino-zazon",
-        "name": "Merino",
+        "slug": "loic-bade",
+        "name": "Loïc Badé",
         "seal": "20",
         "seal_changed": 0,
         "previous_seal": "20",
-        "seal_change_date": "2026-03-08 08:51:00",
-        "slug_limited": "mikel-merino-zazon-2025-limited-1",
-        "slug_rare": "mikel-merino-zazon-2025-rare-1",
-        "slug_superrare": "mikel-merino-zazon-2025-super_rare-1",
+        "seal_change_date": "2026-02-17 10:09:18",
+        "slug_limited": "loic-bade-2025-limited-1",
+        "slug_rare": "loic-bade-2025-rare-1",
+        "slug_superrare": "loic-bade-2025-super_rare-1",
         "price_limited_eur": 2.5,
-        "price_rare_eur": 4.5,
-        "price_superrare_eur": 46.05
+        "price_rare_eur": 10.5,
+        "price_superrare_eur": 58.67
       },
       {
         "slug": "cameron-carter-vickers",
@@ -18425,7 +18411,7 @@
         "slug_superrare": "sergio-herrera-piron-2025-super_rare-1",
         "price_limited_eur": 2.5,
         "price_rare_eur": 14.0,
-        "price_superrare_eur": 198.85
+        "price_superrare_eur": 199.16
       },
       {
         "slug": "douglas-luiz-soares-de-paulo",
@@ -18439,7 +18425,7 @@
         "slug_superrare": "douglas-luiz-soares-de-paulo-2023-super_rare-1",
         "price_limited_eur": 2.5,
         "price_rare_eur": 12.52,
-        "price_superrare_eur": 101.0
+        "price_superrare_eur": 101.31
       },
       {
         "slug": "adam-stejskal",
@@ -18694,6 +18680,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "enzo-millot",
+        "name": "Enzo Millot",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-04 10:04:48",
+        "slug_limited": "enzo-millot-2024-limited-1",
+        "slug_rare": "enzo-millot-2024-rare-1",
+        "slug_superrare": "enzo-millot-2024-super_rare-1",
+        "price_limited_eur": 2.56,
+        "price_rare_eur": 6.87,
+        "price_superrare_eur": 91.35
+      },
+      {
         "slug": "jackson-gabriel-porozo-vernaza",
         "name": "Jackson Porozo",
         "seal": "20",
@@ -18860,6 +18860,20 @@
         "price_limited_eur": 2.59,
         "price_rare_eur": 14.38,
         "price_superrare_eur": 97.66
+      },
+      {
+        "slug": "anton-stach",
+        "name": "Anton Stach",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-19 09:06:01",
+        "slug_limited": "anton-stach-2025-limited-1",
+        "slug_rare": "anton-stach-2025-rare-1",
+        "slug_superrare": "anton-stach-2025-super_rare-1",
+        "price_limited_eur": 2.59,
+        "price_rare_eur": 11.88,
+        "price_superrare_eur": null
       },
       {
         "slug": "daniil-khudyakov",
@@ -19054,7 +19068,7 @@
         "slug_rare": "thiago-almada-2025-rare-1",
         "slug_superrare": "thiago-almada-2025-super_rare-1",
         "price_limited_eur": 2.6,
-        "price_rare_eur": 10.95,
+        "price_rare_eur": 10.91,
         "price_superrare_eur": 135.0
       },
       {
@@ -19338,6 +19352,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "cheikh-kane-sarr",
+        "name": "Cheikh Sarr",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-19 10:08:52",
+        "slug_limited": "cheikh-kane-sarr-2021-limited-1",
+        "slug_rare": "cheikh-kane-sarr-2021-rare-1",
+        "slug_superrare": "cheikh-kane-sarr-2021-super_rare-1",
+        "price_limited_eur": 2.67,
+        "price_rare_eur": 84.82,
+        "price_superrare_eur": 60.0
+      },
+      {
         "slug": "aleksandr-siljanov",
         "name": "Aleksandr Siljanov",
         "seal": "20",
@@ -19408,34 +19436,6 @@
         "price_superrare_eur": 84.99
       },
       {
-        "slug": "loic-bade",
-        "name": "Loïc Badé",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-17 10:09:18",
-        "slug_limited": "loic-bade-2025-limited-1",
-        "slug_rare": "loic-bade-2025-rare-1",
-        "slug_superrare": "loic-bade-2025-super_rare-1",
-        "price_limited_eur": 2.7,
-        "price_rare_eur": 10.5,
-        "price_superrare_eur": 58.67
-      },
-      {
-        "slug": "cheikh-kane-sarr",
-        "name": "Cheikh Sarr",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-19 10:08:52",
-        "slug_limited": "cheikh-kane-sarr-2021-limited-1",
-        "slug_rare": "cheikh-kane-sarr-2021-rare-1",
-        "slug_superrare": "cheikh-kane-sarr-2021-super_rare-1",
-        "price_limited_eur": 2.7,
-        "price_rare_eur": 84.82,
-        "price_superrare_eur": 60.0
-      },
-      {
         "slug": "alex-scott",
         "name": "Alex Scott",
         "seal": "20",
@@ -19490,20 +19490,6 @@
         "price_limited_eur": 2.73,
         "price_rare_eur": 13.6,
         "price_superrare_eur": 300.0
-      },
-      {
-        "slug": "anton-stach",
-        "name": "Anton Stach",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-19 09:06:01",
-        "slug_limited": "anton-stach-2025-limited-1",
-        "slug_rare": "anton-stach-2025-rare-1",
-        "slug_superrare": "anton-stach-2025-super_rare-1",
-        "price_limited_eur": 2.73,
-        "price_rare_eur": 11.88,
-        "price_superrare_eur": null
       },
       {
         "slug": "vaclav-cerny",
@@ -19656,7 +19642,7 @@
         "slug_rare": "gustav-tang-isaksen-2024-rare-1",
         "slug_superrare": "gustav-tang-isaksen-2024-super_rare-1",
         "price_limited_eur": 2.76,
-        "price_rare_eur": null,
+        "price_rare_eur": 9.34,
         "price_superrare_eur": null
       },
       {
@@ -19702,6 +19688,20 @@
         "price_superrare_eur": 89.0
       },
       {
+        "slug": "mikel-merino-zazon",
+        "name": "Merino",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-08 08:51:00",
+        "slug_limited": "mikel-merino-zazon-2025-limited-1",
+        "slug_rare": "mikel-merino-zazon-2025-rare-1",
+        "slug_superrare": "mikel-merino-zazon-2025-super_rare-1",
+        "price_limited_eur": 2.78,
+        "price_rare_eur": 4.5,
+        "price_superrare_eur": 46.05
+      },
+      {
         "slug": "nikolay-komlichenko",
         "name": "Nikolay Komlichenko",
         "seal": "20",
@@ -19741,7 +19741,7 @@
         "slug_superrare": "malo-gusto-2020-super_rare-1",
         "price_limited_eur": 2.79,
         "price_rare_eur": 9.9,
-        "price_superrare_eur": 248.79
+        "price_superrare_eur": 248.61
       },
       {
         "slug": "maarten-paes",
@@ -19853,7 +19853,7 @@
         "slug_superrare": "nicolas-pepe-2025-super_rare-1",
         "price_limited_eur": 2.79,
         "price_rare_eur": 16.0,
-        "price_superrare_eur": 115.11
+        "price_superrare_eur": 120.0
       },
       {
         "slug": "alex-palmer",
@@ -20006,7 +20006,7 @@
         "slug_rare": "pablo-barrios-rivas-2025-rare-1",
         "slug_superrare": "pablo-barrios-rivas-2025-super_rare-1",
         "price_limited_eur": 2.8,
-        "price_rare_eur": 22.0,
+        "price_rare_eur": 21.93,
         "price_superrare_eur": 139.3
       },
       {
@@ -20216,7 +20216,7 @@
         "slug_rare": "niklas-hedl-2025-rare-1",
         "slug_superrare": "niklas-hedl-2025-super_rare-1",
         "price_limited_eur": 2.89,
-        "price_rare_eur": 19.5,
+        "price_rare_eur": 18.42,
         "price_superrare_eur": 275.0
       },
       {
@@ -20259,7 +20259,7 @@
         "slug_superrare": "leandro-martin-gonzalez-pirez-2025-super_rare-1",
         "price_limited_eur": 2.9,
         "price_rare_eur": 5.99,
-        "price_superrare_eur": 67.03
+        "price_superrare_eur": 67.29
       },
       {
         "slug": "leny-yoro",
@@ -20273,7 +20273,7 @@
         "slug_superrare": "leny-yoro-2025-super_rare-1",
         "price_limited_eur": 2.9,
         "price_rare_eur": 26.34,
-        "price_superrare_eur": 99.52
+        "price_superrare_eur": 100.0
       },
       {
         "slug": "petar-sucic",
@@ -20496,7 +20496,7 @@
         "slug_rare": "joris-van-overeem-2020-rare-1",
         "slug_superrare": "joris-van-overeem-2020-super_rare-1",
         "price_limited_eur": 2.97,
-        "price_rare_eur": 4.62,
+        "price_rare_eur": 4.54,
         "price_superrare_eur": null
       },
       {
@@ -20850,20 +20850,6 @@
         "price_superrare_eur": 158.19
       },
       {
-        "slug": "marcos-johan-lopez-lanfranco",
-        "name": "Marcos López",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-18 09:15:24",
-        "slug_limited": "marcos-johan-lopez-lanfranco-2024-limited-2",
-        "slug_rare": "marcos-johan-lopez-lanfranco-2024-rare-2",
-        "slug_superrare": "marcos-johan-lopez-lanfranco-2024-super_rare-1",
-        "price_limited_eur": 3.0,
-        "price_rare_eur": 49.79,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "gavin-bazunu",
         "name": "Gavin Bazunu",
         "seal": "20",
@@ -20990,6 +20976,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "claudio-jeremias-echeverri",
+        "name": "Claudio Echeverri",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-09 09:07:26",
+        "slug_limited": "claudio-jeremias-echeverri-2025-limited-1",
+        "slug_rare": "claudio-jeremias-echeverri-2025-rare-1",
+        "slug_superrare": "claudio-jeremias-echeverri-2025-super_rare-1",
+        "price_limited_eur": 3.0,
+        "price_rare_eur": 23.39,
+        "price_superrare_eur": 149.77
+      },
+      {
         "slug": "leo-kokubo",
         "name": "Leo Kokubo",
         "seal": "20",
@@ -21058,20 +21058,6 @@
         "price_limited_eur": 3.06,
         "price_rare_eur": 18.02,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "claudio-jeremias-echeverri",
-        "name": "Claudio Echeverri",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-09 09:07:26",
-        "slug_limited": "claudio-jeremias-echeverri-2025-limited-1",
-        "slug_rare": "claudio-jeremias-echeverri-2025-rare-1",
-        "slug_superrare": "claudio-jeremias-echeverri-2025-super_rare-1",
-        "price_limited_eur": 3.06,
-        "price_rare_eur": 23.39,
-        "price_superrare_eur": 149.77
       },
       {
         "slug": "joel-robles-blazquez",
@@ -21424,20 +21410,6 @@
         "price_superrare_eur": 230.24
       },
       {
-        "slug": "ronald-koeman-jr",
-        "name": "Ronald Koeman",
-        "seal": "20",
-        "seal_changed": 1,
-        "previous_seal": "5",
-        "seal_change_date": "2026-03-21 08:57:14",
-        "slug_limited": "ronald-koeman-jr-2025-limited-1",
-        "slug_rare": "ronald-koeman-jr-2025-rare-1",
-        "slug_superrare": "ronald-koeman-jr-2025-super_rare-1",
-        "price_limited_eur": 3.19,
-        "price_rare_eur": 17.0,
-        "price_superrare_eur": 299.0
-      },
-      {
         "slug": "igor-akinfeev",
         "name": "Igor Akinfeev",
         "seal": "20",
@@ -21478,6 +21450,20 @@
         "price_limited_eur": 3.23,
         "price_rare_eur": 19.0,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "ronald-koeman-jr",
+        "name": "Ronald Koeman",
+        "seal": "20",
+        "seal_changed": 1,
+        "previous_seal": "5",
+        "seal_change_date": "2026-03-21 08:57:14",
+        "slug_limited": "ronald-koeman-jr-2025-limited-1",
+        "slug_rare": "ronald-koeman-jr-2025-rare-1",
+        "slug_superrare": "ronald-koeman-jr-2025-super_rare-1",
+        "price_limited_eur": 3.24,
+        "price_rare_eur": 17.0,
+        "price_superrare_eur": 299.0
       },
       {
         "slug": "bruno-de-lara-fuchs",
@@ -21728,8 +21714,8 @@
         "slug_rare": "joaquin-seys-2025-rare-1",
         "slug_superrare": "joaquin-seys-2025-super_rare-1",
         "price_limited_eur": 3.35,
-        "price_rare_eur": 13.93,
-        "price_superrare_eur": 157.63
+        "price_rare_eur": 13.87,
+        "price_superrare_eur": 158.19
       },
       {
         "slug": "layvin-kurzawa",
@@ -21757,6 +21743,20 @@
         "slug_superrare": "cameron-devlin-2025-super_rare-1",
         "price_limited_eur": 3.38,
         "price_rare_eur": 15.04,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "marcos-johan-lopez-lanfranco",
+        "name": "Marcos López",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-18 09:15:24",
+        "slug_limited": "marcos-johan-lopez-lanfranco-2024-limited-2",
+        "slug_rare": "marcos-johan-lopez-lanfranco-2024-rare-2",
+        "slug_superrare": "marcos-johan-lopez-lanfranco-2024-super_rare-1",
+        "price_limited_eur": 3.4,
+        "price_rare_eur": 49.79,
         "price_superrare_eur": null
       },
       {
@@ -21886,6 +21886,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "mateo-silvetti",
+        "name": "Mateo Silvetti",
+        "seal": "20",
+        "seal_changed": 1,
+        "previous_seal": "5",
+        "seal_change_date": "2026-03-21 08:58:28",
+        "slug_limited": "mateo-silvetti-2026-limited-1",
+        "slug_rare": "mateo-silvetti-2026-rare-1",
+        "slug_superrare": "mateo-silvetti-2026-super_rare-1",
+        "price_limited_eur": 3.45,
+        "price_rare_eur": 25.07,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "tobias-javier-rubio",
         "name": "Tobías Rubio",
         "seal": "20",
@@ -21924,7 +21938,7 @@
         "slug_rare": "mathias-fernandez-pardo-2025-rare-1",
         "slug_superrare": "mathias-fernandez-pardo-2025-super_rare-1",
         "price_limited_eur": 3.47,
-        "price_rare_eur": 15.0,
+        "price_rare_eur": 14.95,
         "price_superrare_eur": 109.36
       },
       {
@@ -22010,20 +22024,6 @@
         "price_limited_eur": 3.5,
         "price_rare_eur": 5.57,
         "price_superrare_eur": 57.37
-      },
-      {
-        "slug": "mateo-silvetti",
-        "name": "Mateo Silvetti",
-        "seal": "20",
-        "seal_changed": 1,
-        "previous_seal": "5",
-        "seal_change_date": "2026-03-21 08:58:28",
-        "slug_limited": "mateo-silvetti-2026-limited-1",
-        "slug_rare": "mateo-silvetti-2026-rare-1",
-        "slug_superrare": "mateo-silvetti-2026-super_rare-1",
-        "price_limited_eur": 3.5,
-        "price_rare_eur": 25.07,
-        "price_superrare_eur": null
       },
       {
         "slug": "youri-tielemans",
@@ -22247,7 +22247,7 @@
         "slug_superrare": "peter-gulacsi-2024-super_rare-1",
         "price_limited_eur": 3.71,
         "price_rare_eur": 14.7,
-        "price_superrare_eur": 299.31
+        "price_superrare_eur": 100.0
       },
       {
         "slug": "ibrahim-mbaye",
@@ -22540,7 +22540,7 @@
         "slug_rare": "rayane-bounida-2025-rare-1",
         "slug_superrare": "rayane-bounida-2025-super_rare-1",
         "price_limited_eur": 3.96,
-        "price_rare_eur": 40.25,
+        "price_rare_eur": 40.07,
         "price_superrare_eur": null
       },
       {
@@ -22834,7 +22834,7 @@
         "slug_rare": "ander-astralaga-aranguren-2024-rare-1",
         "slug_superrare": "ander-astralaga-aranguren-2024-super_rare-1",
         "price_limited_eur": 4.12,
-        "price_rare_eur": 11.7,
+        "price_rare_eur": 11.88,
         "price_superrare_eur": null
       },
       {
@@ -22864,6 +22864,20 @@
         "price_limited_eur": 4.2,
         "price_rare_eur": 16.9,
         "price_superrare_eur": 198.29
+      },
+      {
+        "slug": "daniel-svensson-2002-02-12",
+        "name": "Daniel Svensson",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-01-31 09:48:07",
+        "slug_limited": "daniel-svensson-2002-02-12-2024-limited-1",
+        "slug_rare": "daniel-svensson-2002-02-12-2024-rare-1",
+        "slug_superrare": "daniel-svensson-2002-02-12-2024-super_rare-1",
+        "price_limited_eur": 4.2,
+        "price_rare_eur": 14.74,
+        "price_superrare_eur": 93.02
       },
       {
         "slug": "gonzalo-garcia-torres",
@@ -22992,20 +23006,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "daniel-svensson-2002-02-12",
-        "name": "Daniel Svensson",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-01-31 09:48:07",
-        "slug_limited": "daniel-svensson-2002-02-12-2024-limited-1",
-        "slug_rare": "daniel-svensson-2002-02-12-2024-rare-1",
-        "slug_superrare": "daniel-svensson-2002-02-12-2024-super_rare-1",
-        "price_limited_eur": 4.47,
-        "price_rare_eur": 14.74,
-        "price_superrare_eur": 93.02
-      },
-      {
         "slug": "nadiem-amiri",
         "name": "Nadiem Amiri",
         "seal": "20",
@@ -23016,7 +23016,7 @@
         "slug_rare": "nadiem-amiri-2020-rare-1",
         "slug_superrare": "nadiem-amiri-2020-super_rare-1",
         "price_limited_eur": 4.5,
-        "price_rare_eur": 19.99,
+        "price_rare_eur": 19.93,
         "price_superrare_eur": 130.9
       },
       {
@@ -23156,7 +23156,7 @@
         "slug_rare": "giovanni-leoni-2025-rare-1",
         "slug_superrare": "giovanni-leoni-2025-super_rare-1",
         "price_limited_eur": 4.76,
-        "price_rare_eur": 27.0,
+        "price_rare_eur": 26.91,
         "price_superrare_eur": 200.0
       },
       {
@@ -23198,7 +23198,7 @@
         "slug_rare": "alphonso-davies-2020-rare-1",
         "slug_superrare": "alphonso-davies-2020-super_rare-1",
         "price_limited_eur": 4.84,
-        "price_rare_eur": 34.54,
+        "price_rare_eur": 34.43,
         "price_superrare_eur": 295.0
       },
       {
@@ -23426,6 +23426,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "cristian-omar-espinoza",
+        "name": "Cristian Espinoza",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-09 10:18:16",
+        "slug_limited": "cristian-omar-espinoza-2025-limited-1",
+        "slug_rare": "cristian-omar-espinoza-2020-rare-1",
+        "slug_superrare": "cristian-omar-espinoza-2020-super_rare-1",
+        "price_limited_eur": 5.2,
+        "price_rare_eur": 22.9,
+        "price_superrare_eur": 70.0
+      },
+      {
         "slug": "aleix-febas-perez",
         "name": "Febas",
         "seal": "20",
@@ -23465,7 +23479,7 @@
         "slug_superrare": "alex-iwobi-2025-super_rare-1",
         "price_limited_eur": 5.26,
         "price_rare_eur": 9.1,
-        "price_superrare_eur": 99.52
+        "price_superrare_eur": 100.0
       },
       {
         "slug": "tyler-morton",
@@ -23534,8 +23548,8 @@
         "slug_rare": "rodrygo-silva-de-goes-2020-rare-1",
         "slug_superrare": "rodrygo-silva-de-goes-2020-super_rare-1",
         "price_limited_eur": 5.41,
-        "price_rare_eur": 18.38,
-        "price_superrare_eur": 278.87
+        "price_rare_eur": 18.32,
+        "price_superrare_eur": 279.8
       },
       {
         "slug": "fabian-ruiz-pena",
@@ -23550,20 +23564,6 @@
         "price_limited_eur": 5.5,
         "price_rare_eur": 24.99,
         "price_superrare_eur": 121.95
-      },
-      {
-        "slug": "keisuke-goto",
-        "name": "Keisuke Goto",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-19 09:09:25",
-        "slug_limited": "keisuke-goto-2025-limited-1",
-        "slug_rare": "keisuke-goto-2025-rare-1",
-        "slug_superrare": "keisuke-goto-2025-super_rare-1",
-        "price_limited_eur": 5.5,
-        "price_rare_eur": 25.0,
-        "price_superrare_eur": null
       },
       {
         "slug": "geovany-tcherno-quenda",
@@ -23760,6 +23760,20 @@
         "price_limited_eur": 6.31,
         "price_rare_eur": 34.51,
         "price_superrare_eur": 189.57
+      },
+      {
+        "slug": "keisuke-goto",
+        "name": "Keisuke Goto",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-19 09:09:25",
+        "slug_limited": "keisuke-goto-2025-limited-1",
+        "slug_rare": "keisuke-goto-2025-rare-1",
+        "slug_superrare": "keisuke-goto-2025-super_rare-1",
+        "price_limited_eur": 6.31,
+        "price_rare_eur": 25.0,
+        "price_superrare_eur": null
       },
       {
         "slug": "eder-gabriel-militao",
@@ -24010,7 +24024,7 @@
         "slug_rare": "mark-flekken-2024-rare-1",
         "slug_superrare": "mark-flekken-2024-super_rare-1",
         "price_limited_eur": 7.3,
-        "price_rare_eur": 35.99,
+        "price_rare_eur": 31.0,
         "price_superrare_eur": 449.99
       },
       {
@@ -24109,7 +24123,7 @@
         "slug_superrare": "nicholas-williams-arthuer-2025-super_rare-1",
         "price_limited_eur": 7.78,
         "price_rare_eur": 24.5,
-        "price_superrare_eur": 298.18
+        "price_superrare_eur": 298.74
       },
       {
         "slug": "victor-mow-froholdt",
@@ -24221,7 +24235,7 @@
         "slug_superrare": "martin-odegaard-2020-super_rare-1",
         "price_limited_eur": 8.5,
         "price_rare_eur": 30.0,
-        "price_superrare_eur": 398.63
+        "price_superrare_eur": 400.0
       },
       {
         "slug": "alvaro-fernandez-carreras",
@@ -24434,6 +24448,20 @@
         "price_superrare_eur": 352.77
       },
       {
+        "slug": "juan-manuel-sanabria-magole",
+        "name": "Juan Sanabria",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-16 09:23:07",
+        "slug_limited": "juan-manuel-sanabria-magole-2026-limited-1",
+        "slug_rare": "juan-manuel-sanabria-magole-2026-rare-1",
+        "slug_superrare": "juan-manuel-sanabria-magole-2026-super_rare-1",
+        "price_limited_eur": 10.35,
+        "price_rare_eur": 34.0,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "paulo-bruno-exequiel-dybala",
         "name": "Paulo Dybala",
         "seal": "20",
@@ -24460,20 +24488,6 @@
         "price_limited_eur": 11.3,
         "price_rare_eur": 37.82,
         "price_superrare_eur": 337.11
-      },
-      {
-        "slug": "juan-manuel-sanabria-magole",
-        "name": "Juan Sanabria",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-16 09:23:07",
-        "slug_limited": "juan-manuel-sanabria-magole-2026-limited-1",
-        "slug_rare": "juan-manuel-sanabria-magole-2026-rare-1",
-        "slug_superrare": "juan-manuel-sanabria-magole-2026-super_rare-1",
-        "price_limited_eur": 11.43,
-        "price_rare_eur": 34.0,
-        "price_superrare_eur": null
       },
       {
         "slug": "toni-kroos",
@@ -24644,6 +24658,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "martin-pecar",
+        "name": "Martin Pečar",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-02-17 10:09:22",
+        "slug_limited": "martin-pecar-2021-limited-1",
+        "slug_rare": "martin-pecar-2021-rare-1",
+        "slug_superrare": "martin-pecar-2021-super_rare-1",
+        "price_limited_eur": 22.65,
+        "price_rare_eur": 22.37,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "thomas-clemente-philippe-gillier-correa",
         "name": "Thomas Gillier",
         "seal": "20",
@@ -24655,20 +24683,6 @@
         "slug_superrare": "thomas-clemente-philippe-gillier-correa-2025-super_rare-1",
         "price_limited_eur": 22.65,
         "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "martin-pecar",
-        "name": "Martin Pečar",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-17 10:09:22",
-        "slug_limited": "martin-pecar-2021-limited-1",
-        "slug_rare": "martin-pecar-2021-rare-1",
-        "slug_superrare": "martin-pecar-2021-super_rare-1",
-        "price_limited_eur": 22.89,
-        "price_rare_eur": 22.37,
         "price_superrare_eur": null
       },
       {
@@ -24711,7 +24725,7 @@
         "slug_superrare": "jude-bellingham-2025-super_rare-1",
         "price_limited_eur": 34.0,
         "price_rare_eur": 194.49,
-        "price_superrare_eur": 1268.1
+        "price_superrare_eur": 1272.43
       },
       {
         "slug": "oscar-zambrano",
@@ -24924,6 +24938,20 @@
         "price_superrare_eur": 150.0
       },
       {
+        "slug": "thomas-kaminski",
+        "name": "Thomas Kaminski",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-15 08:58:21",
+        "slug_limited": "thomas-kaminski-2023-limited-2",
+        "slug_rare": "thomas-kaminski-2019-rare-1",
+        "slug_superrare": "thomas-kaminski-2019-super_rare-1",
+        "price_limited_eur": null,
+        "price_rare_eur": 7.56,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "renan-ribeiro",
         "name": "Renan Ribeiro",
         "seal": "20",
@@ -25060,7 +25088,7 @@
         "slug_rare": "williams-barlasina-2020-rare-1",
         "slug_superrare": "williams-barlasina-2020-super_rare-1",
         "price_limited_eur": null,
-        "price_rare_eur": 13.0,
+        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -25076,20 +25104,6 @@
         "price_limited_eur": null,
         "price_rare_eur": 11.5,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "cristian-omar-espinoza",
-        "name": "Cristian Espinoza",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-02-09 10:18:16",
-        "slug_limited": "cristian-omar-espinoza-2025-limited-1",
-        "slug_rare": "cristian-omar-espinoza-2020-rare-1",
-        "slug_superrare": "cristian-omar-espinoza-2020-super_rare-1",
-        "price_limited_eur": null,
-        "price_rare_eur": 22.9,
-        "price_superrare_eur": 70.0
       },
       {
         "slug": "matteo-darmian",
@@ -25340,7 +25354,7 @@
         "slug_rare": "wilfried-zaha-2025-rare-1",
         "slug_superrare": "wilfried-zaha-2025-super_rare-1",
         "price_limited_eur": null,
-        "price_rare_eur": 7.43,
+        "price_rare_eur": 39.92,
         "price_superrare_eur": 57.56
       },
       {
@@ -25356,6 +25370,20 @@
         "price_limited_eur": null,
         "price_rare_eur": null,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "sam-surridge",
+        "name": "Samuel Surridge",
+        "seal": "20",
+        "seal_changed": 0,
+        "previous_seal": "20",
+        "seal_change_date": "2026-03-20 09:04:30",
+        "slug_limited": "sam-surridge-2025-limited-1",
+        "slug_rare": "sam-surridge-2025-rare-1",
+        "slug_superrare": "sam-surridge-2025-super_rare-1",
+        "price_limited_eur": null,
+        "price_rare_eur": 18.13,
+        "price_superrare_eur": 129.78
       },
       {
         "slug": "mehdi-loune",
@@ -25722,20 +25750,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "hamza-igmane",
-        "name": "Hamza Igamane",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-01-29 10:06:06",
-        "slug_limited": "hamza-igmane-2025-limited-1",
-        "slug_rare": "hamza-igmane-2025-rare-1",
-        "slug_superrare": "hamza-igmane-2025-super_rare-1",
-        "price_limited_eur": null,
-        "price_rare_eur": 16.52,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "cheong-hyo-park",
         "name": "Park Cheong-Hyo",
         "seal": "20",
@@ -25789,20 +25803,6 @@
         "slug_superrare": "claudio-rafael-soares-braga-2025-super_rare-1",
         "price_limited_eur": null,
         "price_rare_eur": 16.92,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "matthew-james-corcoran",
-        "name": "Matthew Corcoran",
-        "seal": "20",
-        "seal_changed": 0,
-        "previous_seal": "20",
-        "seal_change_date": "2026-03-18 09:15:36",
-        "slug_limited": "matthew-james-corcoran-2025-limited-1",
-        "slug_rare": "matthew-james-corcoran-2025-rare-1",
-        "slug_superrare": "matthew-james-corcoran-2025-super_rare-1",
-        "price_limited_eur": null,
-        "price_rare_eur": 6.99,
         "price_superrare_eur": null
       },
       {
@@ -26088,34 +26088,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "manfred-ugalde",
-        "name": "Manfred Ugalde",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-19 09:05:23",
-        "slug_limited": "manfred-ugalde-2023-limited-1",
-        "slug_rare": "manfred-ugalde-2023-rare-1",
-        "slug_superrare": "manfred-ugalde-2023-super_rare-1",
-        "price_limited_eur": 1.94,
-        "price_rare_eur": 19.9,
-        "price_superrare_eur": 200.0
-      },
-      {
-        "slug": "brent-gabriel",
-        "name": "Brent Gabriel",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2025-08-09 16:22:26",
-        "slug_limited": "brent-gabriel-2025-limited-1",
-        "slug_rare": "brent-gabriel-2020-rare-1",
-        "slug_superrare": "brent-gabriel-2020-super_rare-1",
-        "price_limited_eur": 1.95,
-        "price_rare_eur": 12.44,
-        "price_superrare_eur": 259.02
-      },
-      {
         "slug": "kristian-traychev-dimitrov",
         "name": "Kristian Dimitrov",
         "seal": "50",
@@ -26144,6 +26116,34 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "manfred-ugalde",
+        "name": "Manfred Ugalde",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-19 09:05:23",
+        "slug_limited": "manfred-ugalde-2023-limited-1",
+        "slug_rare": "manfred-ugalde-2023-rare-1",
+        "slug_superrare": "manfred-ugalde-2023-super_rare-1",
+        "price_limited_eur": 1.99,
+        "price_rare_eur": 19.9,
+        "price_superrare_eur": 200.0
+      },
+      {
+        "slug": "brent-gabriel",
+        "name": "Brent Gabriel",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2025-08-09 16:22:26",
+        "slug_limited": "brent-gabriel-2025-limited-1",
+        "slug_rare": "brent-gabriel-2020-rare-1",
+        "slug_superrare": "brent-gabriel-2020-super_rare-1",
+        "price_limited_eur": 2.0,
+        "price_rare_eur": 12.44,
+        "price_superrare_eur": 259.02
+      },
+      {
         "slug": "nicholas-defreitas-hansen",
         "name": "Nicholas Hansen",
         "seal": "50",
@@ -26155,20 +26155,6 @@
         "slug_superrare": "nicholas-defreitas-hansen-2025-super_rare-1",
         "price_limited_eur": 2.0,
         "price_rare_eur": 13.0,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "jeisson-andres-palacios-murillo",
-        "name": "Jeisson Palacios",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-06 09:02:34",
-        "slug_limited": "jeisson-andres-palacios-murillo-2025-limited-1",
-        "slug_rare": "jeisson-andres-palacios-murillo-2025-rare-1",
-        "slug_superrare": "jeisson-andres-palacios-murillo-2025-super_rare-1",
-        "price_limited_eur": 2.04,
-        "price_rare_eur": 10.21,
         "price_superrare_eur": null
       },
       {
@@ -26326,6 +26312,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "jeisson-andres-palacios-murillo",
+        "name": "Jeisson Palacios",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-06 09:02:34",
+        "slug_limited": "jeisson-andres-palacios-murillo-2025-limited-1",
+        "slug_rare": "jeisson-andres-palacios-murillo-2025-rare-1",
+        "slug_superrare": "jeisson-andres-palacios-murillo-2025-super_rare-1",
+        "price_limited_eur": 2.33,
+        "price_rare_eur": 15.0,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "julian-hall-2008-03-24",
         "name": "Julian Hall",
         "seal": "50",
@@ -26380,20 +26380,6 @@
         "price_limited_eur": 2.45,
         "price_rare_eur": 8.63,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "lucas-adrian-hoyos",
-        "name": "Lucas Hoyos",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-02-22 09:49:52",
-        "slug_limited": "lucas-adrian-hoyos-2022-limited-1",
-        "slug_rare": "lucas-adrian-hoyos-2022-rare-1",
-        "slug_superrare": "lucas-adrian-hoyos-2022-super_rare-1",
-        "price_limited_eur": 2.48,
-        "price_rare_eur": 13.7,
-        "price_superrare_eur": 199.0
       },
       {
         "slug": "karim-benzema",
@@ -26464,6 +26450,20 @@
         "price_limited_eur": 2.5,
         "price_rare_eur": 21.0,
         "price_superrare_eur": 119.57
+      },
+      {
+        "slug": "lucas-adrian-hoyos",
+        "name": "Lucas Hoyos",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-02-22 09:49:52",
+        "slug_limited": "lucas-adrian-hoyos-2022-limited-1",
+        "slug_rare": "lucas-adrian-hoyos-2022-rare-1",
+        "slug_superrare": "lucas-adrian-hoyos-2022-super_rare-1",
+        "price_limited_eur": 2.5,
+        "price_rare_eur": 13.7,
+        "price_superrare_eur": 199.0
       },
       {
         "slug": "tsuyoshi-watanabe",
@@ -26816,6 +26816,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "abdoul-kone",
+        "name": "Abdoul Koné",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-06 09:02:50",
+        "slug_limited": "abdoul-kone-2025-limited-1",
+        "slug_rare": "abdoul-kone-2025-rare-1",
+        "slug_superrare": "abdoul-kone-2025-super_rare-1",
+        "price_limited_eur": 2.88,
+        "price_rare_eur": 21.49,
+        "price_superrare_eur": 170.26
+      },
+      {
         "slug": "albert-gudmundsson",
         "name": "Albert Guðmundsson",
         "seal": "50",
@@ -26882,7 +26896,7 @@
         "slug_rare": "juan-soriano-oropesa-2024-rare-1",
         "slug_superrare": "juan-soriano-oropesa-2024-super_rare-1",
         "price_limited_eur": 2.94,
-        "price_rare_eur": 27.85,
+        "price_rare_eur": 25.0,
         "price_superrare_eur": null
       },
       {
@@ -26942,6 +26956,20 @@
         "price_superrare_eur": 344.6
       },
       {
+        "slug": "alexandre-kouto-horio-pisano",
+        "name": "Alexandre Pisano",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-19 09:09:47",
+        "slug_limited": "alexandre-kouto-horio-pisano-2025-limited-1",
+        "slug_rare": "alexandre-kouto-horio-pisano-2025-rare-1",
+        "slug_superrare": "alexandre-kouto-horio-pisano-2025-super_rare-1",
+        "price_limited_eur": 2.97,
+        "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "arseniy-batagov",
         "name": "Arsenii Batahov",
         "seal": "50",
@@ -26952,7 +26980,7 @@
         "slug_rare": "arseniy-batagov-2025-rare-1",
         "slug_superrare": "arseniy-batagov-2025-super_rare-1",
         "price_limited_eur": 2.97,
-        "price_rare_eur": 23.39,
+        "price_rare_eur": 23.21,
         "price_superrare_eur": 113.97
       },
       {
@@ -26966,7 +26994,7 @@
         "slug_rare": "tawanda-jethro-maswanhise-2025-rare-1",
         "slug_superrare": "tawanda-jethro-maswanhise-2025-super_rare-1",
         "price_limited_eur": 2.98,
-        "price_rare_eur": 19.5,
+        "price_rare_eur": 19.43,
         "price_superrare_eur": null
       },
       {
@@ -27054,6 +27082,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "vitor-de-oliveira-nunes-dos-reis",
+        "name": "Vitor Reis",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2025-12-02 08:52:02",
+        "slug_limited": "vitor-de-oliveira-nunes-dos-reis-2025-limited-1",
+        "slug_rare": "vitor-de-oliveira-nunes-dos-reis-2025-rare-1",
+        "slug_superrare": "vitor-de-oliveira-nunes-dos-reis-2025-super_rare-1",
+        "price_limited_eur": 3.0,
+        "price_rare_eur": 22.4,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "jan-bednarek",
         "name": "Jan Bednarek",
         "seal": "50",
@@ -27135,34 +27177,6 @@
         "slug_superrare": "finn-jeltsch-2024-super_rare-1",
         "price_limited_eur": 3.05,
         "price_rare_eur": 12.27,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "abdoul-kone",
-        "name": "Abdoul Koné",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-06 09:02:50",
-        "slug_limited": "abdoul-kone-2025-limited-1",
-        "slug_rare": "abdoul-kone-2025-rare-1",
-        "slug_superrare": "abdoul-kone-2025-super_rare-1",
-        "price_limited_eur": 3.09,
-        "price_rare_eur": 21.49,
-        "price_superrare_eur": 170.26
-      },
-      {
-        "slug": "alexandre-kouto-horio-pisano",
-        "name": "Alexandre Pisano",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-19 09:09:47",
-        "slug_limited": "alexandre-kouto-horio-pisano-2025-limited-1",
-        "slug_rare": "alexandre-kouto-horio-pisano-2025-rare-1",
-        "slug_superrare": "alexandre-kouto-horio-pisano-2025-super_rare-1",
-        "price_limited_eur": 3.1,
-        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -27264,6 +27278,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "marco-tulio-oliveira-lemos",
+        "name": "Marco Túlio",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-18 09:12:16",
+        "slug_limited": "marco-tulio-oliveira-lemos-2025-limited-1",
+        "slug_rare": "marco-tulio-oliveira-lemos-2025-rare-1",
+        "slug_superrare": "marco-tulio-oliveira-lemos-2025-super_rare-1",
+        "price_limited_eur": 3.16,
+        "price_rare_eur": 14.6,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "matheus-goncalves-savio",
         "name": "Matheus Savio",
         "seal": "50",
@@ -27360,20 +27388,6 @@
         "price_limited_eur": 3.2,
         "price_rare_eur": 16.13,
         "price_superrare_eur": 100.0
-      },
-      {
-        "slug": "marco-tulio-oliveira-lemos",
-        "name": "Marco Túlio",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-18 09:12:16",
-        "slug_limited": "marco-tulio-oliveira-lemos-2025-limited-1",
-        "slug_rare": "marco-tulio-oliveira-lemos-2025-rare-1",
-        "slug_superrare": "marco-tulio-oliveira-lemos-2025-super_rare-1",
-        "price_limited_eur": 3.21,
-        "price_rare_eur": 14.6,
-        "price_superrare_eur": null
       },
       {
         "slug": "tatsuya-ito",
@@ -27849,7 +27863,21 @@
         "slug_superrare": "alex-nicolao-telles-2019-super_rare-1",
         "price_limited_eur": 3.43,
         "price_rare_eur": null,
-        "price_superrare_eur": 95.8
+        "price_superrare_eur": 96.73
+      },
+      {
+        "slug": "diogo-de-oliveira-barbosa",
+        "name": "Diogo Oliveira",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": null,
+        "slug_limited": "diogo-de-oliveira-barbosa-2026-limited-1",
+        "slug_rare": "diogo-de-oliveira-barbosa-2026-rare-1",
+        "slug_superrare": "diogo-de-oliveira-barbosa-2026-super_rare-1",
+        "price_limited_eur": 3.43,
+        "price_rare_eur": null,
+        "price_superrare_eur": null
       },
       {
         "slug": "cavan-sullivan",
@@ -27922,20 +27950,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "diogo-de-oliveira-barbosa",
-        "name": "Diogo Oliveira",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": null,
-        "slug_limited": "diogo-de-oliveira-barbosa-2026-limited-1",
-        "slug_rare": "diogo-de-oliveira-barbosa-2026-rare-1",
-        "slug_superrare": "diogo-de-oliveira-barbosa-2026-super_rare-1",
-        "price_limited_eur": 3.48,
-        "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "keylor-navas-gamboa",
         "name": "Keylor Navas",
         "seal": "50",
@@ -27990,6 +28004,20 @@
         "price_limited_eur": 3.5,
         "price_rare_eur": 17.95,
         "price_superrare_eur": 174.96
+      },
+      {
+        "slug": "andres-andrade-cedeno",
+        "name": "Andres Andrade",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-14 08:56:22",
+        "slug_limited": "andres-andrade-cedeno-2025-limited-1",
+        "slug_rare": "andres-andrade-cedeno-2025-rare-1",
+        "slug_superrare": "andres-andrade-cedeno-2025-super_rare-1",
+        "price_limited_eur": 3.5,
+        "price_rare_eur": null,
+        "price_superrare_eur": 256.03
       },
       {
         "slug": "haji-wright",
@@ -28087,7 +28115,7 @@
         "slug_superrare": "justin-bijlow-2020-super_rare-1",
         "price_limited_eur": 3.53,
         "price_rare_eur": 15.99,
-        "price_superrare_eur": 189.01
+        "price_superrare_eur": 190.68
       },
       {
         "slug": "luke-ayling",
@@ -28101,6 +28129,20 @@
         "slug_superrare": "luke-ayling-2022-super_rare-1",
         "price_limited_eur": 3.53,
         "price_rare_eur": 10.21,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "patrick-gilmar-sequeira-mejias",
+        "name": "Patrick Sequeira",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-17 09:12:37",
+        "slug_limited": "patrick-gilmar-sequeira-mejias-2022-limited-1",
+        "slug_rare": "patrick-gilmar-sequeira-mejias-2022-rare-1",
+        "slug_superrare": "patrick-gilmar-sequeira-mejias-2022-super_rare-1",
+        "price_limited_eur": 3.53,
+        "price_rare_eur": 24.69,
         "price_superrare_eur": null
       },
       {
@@ -28146,20 +28188,6 @@
         "price_superrare_eur": 170.0
       },
       {
-        "slug": "ian-martin-subiabre",
-        "name": "Ian Subiabre",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-14 08:58:28",
-        "slug_limited": "ian-martin-subiabre-2025-limited-1",
-        "slug_rare": "ian-martin-subiabre-2025-rare-1",
-        "slug_superrare": "ian-martin-subiabre-2025-super_rare-1",
-        "price_limited_eur": 3.53,
-        "price_rare_eur": 15.78,
-        "price_superrare_eur": 149.21
-      },
-      {
         "slug": "jordi-mboula-queralt",
         "name": "Jordi Mboula",
         "seal": "50",
@@ -28185,20 +28213,6 @@
         "slug_superrare": "santiago-tomas-castro-2024-super_rare-1",
         "price_limited_eur": 3.54,
         "price_rare_eur": 20.66,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "patrick-gilmar-sequeira-mejias",
-        "name": "Patrick Sequeira",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-17 09:12:37",
-        "slug_limited": "patrick-gilmar-sequeira-mejias-2022-limited-1",
-        "slug_rare": "patrick-gilmar-sequeira-mejias-2022-rare-1",
-        "slug_superrare": "patrick-gilmar-sequeira-mejias-2022-super_rare-1",
-        "price_limited_eur": 3.54,
-        "price_rare_eur": 24.69,
         "price_superrare_eur": null
       },
       {
@@ -28272,6 +28286,20 @@
         "price_superrare_eur": 99.0
       },
       {
+        "slug": "djeidi-gassama",
+        "name": "Djeidi Gassama",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-01-28 09:53:07",
+        "slug_limited": "djeidi-gassama-2025-limited-1",
+        "slug_rare": "djeidi-gassama-2025-rare-1",
+        "slug_superrare": "djeidi-gassama-2025-super_rare-1",
+        "price_limited_eur": 3.57,
+        "price_rare_eur": null,
+        "price_superrare_eur": 122.5
+      },
+      {
         "slug": "alex-meret",
         "name": "Alex Meret",
         "seal": "50",
@@ -28284,20 +28312,6 @@
         "price_limited_eur": 3.58,
         "price_rare_eur": 14.84,
         "price_superrare_eur": 175.0
-      },
-      {
-        "slug": "wouter-burger",
-        "name": "Wouter Burger",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-02-18 10:08:15",
-        "slug_limited": "wouter-burger-2021-limited-1",
-        "slug_rare": "wouter-burger-2020-rare-1",
-        "slug_superrare": "wouter-burger-2020-super_rare-1",
-        "price_limited_eur": 3.59,
-        "price_rare_eur": 30.0,
-        "price_superrare_eur": 120.0
       },
       {
         "slug": "ander-cantero-armendariz",
@@ -28326,20 +28340,6 @@
         "price_limited_eur": 3.6,
         "price_rare_eur": 19.57,
         "price_superrare_eur": 165.0
-      },
-      {
-        "slug": "andres-andrade-cedeno",
-        "name": "Andres Andrade",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-14 08:56:22",
-        "slug_limited": "andres-andrade-cedeno-2025-limited-1",
-        "slug_rare": "andres-andrade-cedeno-2025-rare-1",
-        "slug_superrare": "andres-andrade-cedeno-2025-super_rare-1",
-        "price_limited_eur": 3.6,
-        "price_rare_eur": null,
-        "price_superrare_eur": 256.03
       },
       {
         "slug": "jarell-quansah-2003-01-29",
@@ -28436,7 +28436,7 @@
         "slug_rare": "novak-micovic-2025-rare-1",
         "slug_superrare": "novak-micovic-2025-super_rare-1",
         "price_limited_eur": 3.67,
-        "price_rare_eur": 23.03,
+        "price_rare_eur": 23.02,
         "price_superrare_eur": 103.42
       },
       {
@@ -28506,7 +28506,7 @@
         "slug_rare": "fisnik-asllani-2024-rare-1",
         "slug_superrare": "fisnik-asllani-2024-super_rare-1",
         "price_limited_eur": 3.7,
-        "price_rare_eur": 31.93,
+        "price_rare_eur": 31.83,
         "price_superrare_eur": null
       },
       {
@@ -28522,6 +28522,20 @@
         "price_limited_eur": 3.7,
         "price_rare_eur": 22.0,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "ian-martin-subiabre",
+        "name": "Ian Subiabre",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-14 08:58:28",
+        "slug_limited": "ian-martin-subiabre-2025-limited-1",
+        "slug_rare": "ian-martin-subiabre-2025-rare-1",
+        "slug_superrare": "ian-martin-subiabre-2025-super_rare-1",
+        "price_limited_eur": 3.7,
+        "price_rare_eur": 15.78,
+        "price_superrare_eur": 149.21
       },
       {
         "slug": "andre-onana",
@@ -28620,20 +28634,6 @@
         "price_limited_eur": 3.74,
         "price_rare_eur": null,
         "price_superrare_eur": 287.8
-      },
-      {
-        "slug": "djeidi-gassama",
-        "name": "Djeidi Gassama",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-01-28 09:53:07",
-        "slug_limited": "djeidi-gassama-2025-limited-1",
-        "slug_rare": "djeidi-gassama-2025-rare-1",
-        "slug_superrare": "djeidi-gassama-2025-super_rare-1",
-        "price_limited_eur": 3.74,
-        "price_rare_eur": null,
-        "price_superrare_eur": 122.5
       },
       {
         "slug": "edin-dzeko",
@@ -28972,20 +28972,6 @@
         "price_superrare_eur": 248.42
       },
       {
-        "slug": "vitor-de-oliveira-nunes-dos-reis",
-        "name": "Vitor Reis",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2025-12-02 08:52:02",
-        "slug_limited": "vitor-de-oliveira-nunes-dos-reis-2025-limited-1",
-        "slug_rare": "vitor-de-oliveira-nunes-dos-reis-2025-rare-1",
-        "slug_superrare": "vitor-de-oliveira-nunes-dos-reis-2025-super_rare-1",
-        "price_limited_eur": 3.9,
-        "price_rare_eur": 22.4,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "wessel-dammers",
         "name": "Wessel Dammers",
         "seal": "50",
@@ -29234,7 +29220,7 @@
         "slug_rare": "freese-matthew-2020-rare-1",
         "slug_superrare": "freese-matthew-2020-super_rare-1",
         "price_limited_eur": 4.0,
-        "price_rare_eur": 25.07,
+        "price_rare_eur": 34.54,
         "price_superrare_eur": 185.67
       },
       {
@@ -29459,7 +29445,7 @@
         "slug_superrare": "jakub-piotr-kiwior-2025-super_rare-1",
         "price_limited_eur": 4.1,
         "price_rare_eur": 23.77,
-        "price_superrare_eur": 273.49
+        "price_superrare_eur": 274.5
       },
       {
         "slug": "ersin-destanoglu",
@@ -29502,6 +29488,20 @@
         "price_limited_eur": 4.12,
         "price_rare_eur": 25.0,
         "price_superrare_eur": 189.38
+      },
+      {
+        "slug": "wouter-burger",
+        "name": "Wouter Burger",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-02-18 10:08:15",
+        "slug_limited": "wouter-burger-2021-limited-1",
+        "slug_rare": "wouter-burger-2020-rare-1",
+        "slug_superrare": "wouter-burger-2020-super_rare-1",
+        "price_limited_eur": 4.2,
+        "price_rare_eur": 29.9,
+        "price_superrare_eur": 120.0
       },
       {
         "slug": "franko-kolic",
@@ -29586,6 +29586,20 @@
         "price_limited_eur": 4.21,
         "price_rare_eur": 18.4,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "andrew-vincent-rick",
+        "name": "Andrew Rick",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-02-19 10:12:24",
+        "slug_limited": "andrew-vincent-rick-2025-limited-1",
+        "slug_rare": "andrew-vincent-rick-2025-rare-1",
+        "slug_superrare": "andrew-vincent-rick-2025-super_rare-1",
+        "price_limited_eur": 4.22,
+        "price_rare_eur": 16.16,
+        "price_superrare_eur": 192.35
       },
       {
         "slug": "jordan-larsson",
@@ -29754,20 +29768,6 @@
         "price_limited_eur": 4.29,
         "price_rare_eur": 21.0,
         "price_superrare_eur": 199.0
-      },
-      {
-        "slug": "andrew-vincent-rick",
-        "name": "Andrew Rick",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-02-19 10:12:24",
-        "slug_limited": "andrew-vincent-rick-2025-limited-1",
-        "slug_rare": "andrew-vincent-rick-2025-rare-1",
-        "slug_superrare": "andrew-vincent-rick-2025-super_rare-1",
-        "price_limited_eur": 4.29,
-        "price_rare_eur": 16.16,
-        "price_superrare_eur": 189.01
       },
       {
         "slug": "ryan-porteous",
@@ -30102,7 +30102,7 @@
         "slug_rare": "thomas-muller-2020-rare-1",
         "slug_superrare": "thomas-muller-2020-super_rare-1",
         "price_limited_eur": 4.57,
-        "price_rare_eur": 25.07,
+        "price_rare_eur": 40.0,
         "price_superrare_eur": 138.32
       },
       {
@@ -30118,6 +30118,20 @@
         "price_limited_eur": 4.58,
         "price_rare_eur": 27.22,
         "price_superrare_eur": 250.0
+      },
+      {
+        "slug": "kosei-tani",
+        "name": "Kosei Tani",
+        "seal": "50",
+        "seal_changed": 1,
+        "previous_seal": "200",
+        "seal_change_date": "2026-03-21 08:52:28",
+        "slug_limited": "kosei-tani-2025-limited-1",
+        "slug_rare": "kosei-tani-2020-rare-1",
+        "slug_superrare": "kosei-tani-2020-super_rare-1",
+        "price_limited_eur": 4.59,
+        "price_rare_eur": null,
+        "price_superrare_eur": 119.0
       },
       {
         "slug": "thomas-strakosha",
@@ -30624,20 +30638,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "kosei-tani",
-        "name": "Kosei Tani",
-        "seal": "50",
-        "seal_changed": 1,
-        "previous_seal": "200",
-        "seal_change_date": "2026-03-21 08:52:28",
-        "slug_limited": "kosei-tani-2025-limited-1",
-        "slug_rare": "kosei-tani-2020-rare-1",
-        "slug_superrare": "kosei-tani-2020-super_rare-1",
-        "price_limited_eur": 4.95,
-        "price_rare_eur": null,
-        "price_superrare_eur": 119.0
-      },
-      {
         "slug": "azzedine-ounahi",
         "name": "Azzedine Ounahi",
         "seal": "50",
@@ -30691,7 +30691,7 @@
         "slug_superrare": "nnamdi-collins-2024-super_rare-1",
         "price_limited_eur": 4.99,
         "price_rare_eur": 15.0,
-        "price_superrare_eur": 159.3
+        "price_superrare_eur": 160.0
       },
       {
         "slug": "luca-bombino",
@@ -30860,20 +30860,6 @@
         "price_limited_eur": 5.1,
         "price_rare_eur": 25.0,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "anthony-gordon",
-        "name": "Anthony Gordon",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-02-17 10:10:18",
-        "slug_limited": "anthony-gordon-2025-limited-1",
-        "slug_rare": "anthony-gordon-2025-rare-1",
-        "slug_superrare": "anthony-gordon-2025-super_rare-1",
-        "price_limited_eur": 5.11,
-        "price_rare_eur": 52.95,
-        "price_superrare_eur": 172.68
       },
       {
         "slug": "tom-bischof",
@@ -31086,6 +31072,20 @@
         "price_superrare_eur": 276.29
       },
       {
+        "slug": "kjell-scherpen",
+        "name": "Kjell Scherpen",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-17 09:15:13",
+        "slug_limited": "kjell-scherpen-2025-limited-1",
+        "slug_rare": "kjell-scherpen-2020-rare-1",
+        "slug_superrare": "kjell-scherpen-2020-super_rare-1",
+        "price_limited_eur": 5.31,
+        "price_rare_eur": 26.92,
+        "price_superrare_eur": 448.97
+      },
+      {
         "slug": "ibrahima-konate",
         "name": "Ibrahima Konaté",
         "seal": "50",
@@ -31296,20 +31296,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "kjell-scherpen",
-        "name": "Kjell Scherpen",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-17 09:15:13",
-        "slug_limited": "kjell-scherpen-2025-limited-1",
-        "slug_rare": "kjell-scherpen-2020-rare-1",
-        "slug_superrare": "kjell-scherpen-2020-super_rare-1",
-        "price_limited_eur": 5.54,
-        "price_rare_eur": 26.92,
-        "price_superrare_eur": 448.97
-      },
-      {
         "slug": "tobias-okiki-lawal",
         "name": "Tobias Lawal",
         "seal": "50",
@@ -31363,20 +31349,6 @@
         "slug_superrare": "eli-junior-kroupi-2025-super_rare-1",
         "price_limited_eur": 5.57,
         "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "matheus-lima-magalhaes",
-        "name": "Matheus",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-01-22 09:56:01",
-        "slug_limited": "matheus-lima-magalhaes-2024-limited-1",
-        "slug_rare": "matheus-lima-magalhaes-2024-rare-1",
-        "slug_superrare": "matheus-lima-magalhaes-2024-super_rare-1",
-        "price_limited_eur": 5.57,
-        "price_rare_eur": 11.95,
         "price_superrare_eur": null
       },
       {
@@ -31674,18 +31646,18 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "maarten-vandevoordt",
-        "name": "Maarten Vandevoordt",
+        "slug": "anthony-gordon",
+        "name": "Anthony Gordon",
         "seal": "50",
         "seal_changed": 0,
         "previous_seal": "50",
-        "seal_change_date": "2026-03-14 08:57:28",
-        "slug_limited": "maarten-vandevoordt-2024-limited-1",
-        "slug_rare": "maarten-vandevoordt-2020-rare-1",
-        "slug_superrare": "maarten-vandevoordt-2020-super_rare-1",
-        "price_limited_eur": 6.0,
-        "price_rare_eur": null,
-        "price_superrare_eur": null
+        "seal_change_date": "2026-02-17 10:10:18",
+        "slug_limited": "anthony-gordon-2025-limited-1",
+        "slug_rare": "anthony-gordon-2025-rare-1",
+        "slug_superrare": "anthony-gordon-2025-super_rare-1",
+        "price_limited_eur": 5.99,
+        "price_rare_eur": 52.95,
+        "price_superrare_eur": 172.68
       },
       {
         "slug": "pierre-kalulu-kyatengwa",
@@ -31814,6 +31786,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "matheus-lima-magalhaes",
+        "name": "Matheus",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-01-22 09:56:01",
+        "slug_limited": "matheus-lima-magalhaes-2024-limited-1",
+        "slug_rare": "matheus-lima-magalhaes-2024-rare-1",
+        "slug_superrare": "matheus-lima-magalhaes-2024-super_rare-1",
+        "price_limited_eur": 6.12,
+        "price_rare_eur": 11.95,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "arturo-erasmo-vidal-pardo",
         "name": "Arturo Vidal",
         "seal": "50",
@@ -31895,6 +31881,20 @@
         "slug_superrare": "hyeon-yeop-kim-2026-super_rare-1",
         "price_limited_eur": 6.21,
         "price_rare_eur": 25.07,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "maarten-vandevoordt",
+        "name": "Maarten Vandevoordt",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-14 08:57:28",
+        "slug_limited": "maarten-vandevoordt-2024-limited-1",
+        "slug_rare": "maarten-vandevoordt-2020-rare-1",
+        "slug_superrare": "maarten-vandevoordt-2020-super_rare-1",
+        "price_limited_eur": 6.23,
+        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -31992,8 +31992,8 @@
         "slug_rare": "maximiliano-javier-araujo-vilches-2025-rare-1",
         "slug_superrare": "maximiliano-javier-araujo-vilches-2025-super_rare-1",
         "price_limited_eur": 6.4,
-        "price_rare_eur": 17.8,
-        "price_superrare_eur": 183.44
+        "price_rare_eur": 16.99,
+        "price_superrare_eur": 183.62
       },
       {
         "slug": "leonardo-de-sousa-pereira",
@@ -32024,20 +32024,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "wesley-moraes-ferreira-da-silva",
-        "name": "Wesley Moraes ",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-02-15 09:49:33",
-        "slug_limited": "wesley-moraes-ferreira-da-silva-2022-limited-1",
-        "slug_rare": "wesley-moraes-ferreira-da-silva-2018-rare-1",
-        "slug_superrare": "wesley-moraes-ferreira-da-silva-2018-super_rare-1",
-        "price_limited_eur": 6.5,
-        "price_rare_eur": 74.27,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "valentin-rongier",
         "name": "Valentin Rongier",
         "seal": "50",
@@ -32062,7 +32048,7 @@
         "slug_rare": "denis-bouanga-2020-rare-1",
         "slug_superrare": "denis-bouanga-2020-super_rare-1",
         "price_limited_eur": 6.5,
-        "price_rare_eur": 33.42,
+        "price_rare_eur": null,
         "price_superrare_eur": 193.46
       },
       {
@@ -32133,6 +32119,20 @@
         "slug_superrare": "amad-diallo-traore-2025-super_rare-1",
         "price_limited_eur": 6.5,
         "price_rare_eur": 19.99,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "jack-butland",
+        "name": "Jack Butland",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-03 10:06:48",
+        "slug_limited": "jack-butland-2025-limited-1",
+        "slug_rare": "jack-butland-2025-rare-1",
+        "slug_superrare": "jack-butland-2025-super_rare-1",
+        "price_limited_eur": 6.62,
+        "price_rare_eur": 39.35,
         "price_superrare_eur": null
       },
       {
@@ -32216,7 +32216,7 @@
         "slug_rare": "kristijan-kahlina-2025-rare-1",
         "slug_superrare": "kristijan-kahlina-2025-super_rare-1",
         "price_limited_eur": 6.9,
-        "price_rare_eur": 46.6,
+        "price_rare_eur": null,
         "price_superrare_eur": null
       },
       {
@@ -32231,6 +32231,20 @@
         "slug_superrare": "emil-audero-mulyadi-2020-super_rare-1",
         "price_limited_eur": 6.94,
         "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "wesley-moraes-ferreira-da-silva",
+        "name": "Wesley Moraes ",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-02-15 09:49:33",
+        "slug_limited": "wesley-moraes-ferreira-da-silva-2022-limited-1",
+        "slug_rare": "wesley-moraes-ferreira-da-silva-2018-rare-1",
+        "slug_superrare": "wesley-moraes-ferreira-da-silva-2018-super_rare-1",
+        "price_limited_eur": 6.95,
+        "price_rare_eur": 74.27,
         "price_superrare_eur": null
       },
       {
@@ -32273,20 +32287,6 @@
         "slug_superrare": "yuma-suzuki-2020-super_rare-1",
         "price_limited_eur": 7.0,
         "price_rare_eur": 30.0,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "jack-butland",
-        "name": "Jack Butland",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-03 10:06:48",
-        "slug_limited": "jack-butland-2025-limited-1",
-        "slug_rare": "jack-butland-2025-rare-1",
-        "slug_superrare": "jack-butland-2025-super_rare-1",
-        "price_limited_eur": 7.0,
-        "price_rare_eur": 39.35,
         "price_superrare_eur": null
       },
       {
@@ -32342,7 +32342,7 @@
         "slug_rare": "luiz-lucio-reis-junior-2025-rare-1",
         "slug_superrare": "luiz-lucio-reis-junior-2025-super_rare-1",
         "price_limited_eur": 7.19,
-        "price_rare_eur": 45.0,
+        "price_rare_eur": 44.81,
         "price_superrare_eur": null
       },
       {
@@ -32370,7 +32370,7 @@
         "slug_rare": "hrvoje-babec-2025-rare-1",
         "slug_superrare": "hrvoje-babec-2025-super_rare-1",
         "price_limited_eur": 7.24,
-        "price_rare_eur": null,
+        "price_rare_eur": 16.99,
         "price_superrare_eur": 32.0
       },
       {
@@ -32766,20 +32766,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "matheus-oliveira-santos",
-        "name": "Matheus Oliveira",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-17 09:15:43",
-        "slug_limited": "matheus-oliveira-santos-2025-limited-1",
-        "slug_rare": "matheus-oliveira-santos-2025-rare-1",
-        "slug_superrare": "matheus-oliveira-santos-2025-super_rare-1",
-        "price_limited_eur": 8.73,
-        "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "ethan-horvath",
         "name": "Ethan Horvath",
         "seal": "50",
@@ -32818,7 +32804,7 @@
         "slug_rare": "kamil-grabara-2024-rare-1",
         "slug_superrare": "kamil-grabara-2024-super_rare-1",
         "price_limited_eur": 9.0,
-        "price_rare_eur": 44.75,
+        "price_rare_eur": 36.99,
         "price_superrare_eur": null
       },
       {
@@ -32889,20 +32875,6 @@
         "slug_superrare": "edouard-mendy-2022-super_rare-1",
         "price_limited_eur": 9.28,
         "price_rare_eur": 50.0,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "luka-stojkovic",
-        "name": "Luka Stojković",
-        "seal": "50",
-        "seal_changed": 0,
-        "previous_seal": "50",
-        "seal_change_date": "2026-03-02 10:10:11",
-        "slug_limited": "luka-stojkovic-2025-limited-1",
-        "slug_rare": "luka-stojkovic-2025-rare-1",
-        "slug_superrare": "luka-stojkovic-2025-super_rare-1",
-        "price_limited_eur": 9.38,
-        "price_rare_eur": 60.0,
         "price_superrare_eur": null
       },
       {
@@ -33112,7 +33084,7 @@
         "slug_rare": "ewen-jaouen-2025-rare-1",
         "slug_superrare": "ewen-jaouen-2025-super_rare-1",
         "price_limited_eur": 13.0,
-        "price_rare_eur": 57.0,
+        "price_rare_eur": 56.74,
         "price_superrare_eur": null
       },
       {
@@ -33265,7 +33237,7 @@
         "slug_limited": "matheus-sousa-de-jesus-2026-limited-1",
         "slug_rare": "matheus-sousa-de-jesus-2026-rare-1",
         "slug_superrare": "matheus-sousa-de-jesus-2026-super_rare-1",
-        "price_limited_eur": 17.83,
+        "price_limited_eur": 17.82,
         "price_rare_eur": 52.09,
         "price_superrare_eur": null
       },
@@ -33504,7 +33476,7 @@
         "slug_rare": "matt-turner-2025-rare-1",
         "slug_superrare": "matt-turner-2025-super_rare-1",
         "price_limited_eur": null,
-        "price_rare_eur": 16.71,
+        "price_rare_eur": 16.11,
         "price_superrare_eur": null
       },
       {
@@ -33547,6 +33519,20 @@
         "slug_superrare": "brooke-dion-nelson-norton-cuffy-2022-super_rare-1",
         "price_limited_eur": null,
         "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
+        "slug": "luka-stojkovic",
+        "name": "Luka Stojković",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-02 10:10:11",
+        "slug_limited": "luka-stojkovic-2025-limited-1",
+        "slug_rare": "luka-stojkovic-2025-rare-1",
+        "slug_superrare": "luka-stojkovic-2025-super_rare-1",
+        "price_limited_eur": null,
+        "price_rare_eur": 60.0,
         "price_superrare_eur": null
       },
       {
@@ -33662,6 +33648,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "matheus-oliveira-santos",
+        "name": "Matheus Oliveira",
+        "seal": "50",
+        "seal_changed": 0,
+        "previous_seal": "50",
+        "seal_change_date": "2026-03-17 09:15:43",
+        "slug_limited": "matheus-oliveira-santos-2025-limited-1",
+        "slug_rare": "matheus-oliveira-santos-2025-rare-1",
+        "slug_superrare": "matheus-oliveira-santos-2025-super_rare-1",
+        "price_limited_eur": null,
+        "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "alvaro-david-montero-perales",
         "name": "Álvaro Montero",
         "seal": "50",
@@ -33746,20 +33746,6 @@
         "price_limited_eur": 5.23,
         "price_rare_eur": 21.95,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "justin-che",
-        "name": "Justin Che",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-03-01 09:47:20",
-        "slug_limited": "justin-che-2025-limited-1",
-        "slug_rare": "justin-che-2025-rare-1",
-        "slug_superrare": "justin-che-2025-super_rare-1",
-        "price_limited_eur": 5.57,
-        "price_rare_eur": 45.0,
-        "price_superrare_eur": 200.0
       },
       {
         "slug": "lorenzo-amatucci",
@@ -34070,20 +34056,6 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "maximilian-mittelstadt",
-        "name": "Maximilian Mittelstädt",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-01-28 09:51:15",
-        "slug_limited": "maximilian-mittelstadt-2024-limited-1",
-        "slug_rare": "maximilian-mittelstadt-2024-rare-1",
-        "slug_superrare": "maximilian-mittelstadt-2024-super_rare-1",
-        "price_limited_eur": 7.43,
-        "price_rare_eur": 73.99,
-        "price_superrare_eur": 316.75
-      },
-      {
         "slug": "lukas-jungwirth",
         "name": "Lukas Jungwirth",
         "seal": "200",
@@ -34152,6 +34124,20 @@
         "price_limited_eur": 7.58,
         "price_rare_eur": 45.0,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "maximilian-mittelstadt",
+        "name": "Maximilian Mittelstädt",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-01-28 09:51:15",
+        "slug_limited": "maximilian-mittelstadt-2024-limited-1",
+        "slug_rare": "maximilian-mittelstadt-2024-rare-1",
+        "slug_superrare": "maximilian-mittelstadt-2024-super_rare-1",
+        "price_limited_eur": 7.61,
+        "price_rare_eur": 73.99,
+        "price_superrare_eur": 316.75
       },
       {
         "slug": "james-garner",
@@ -34406,6 +34392,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "anis-hadj-moussa",
+        "name": "Anis Hadj Moussa",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-03-16 09:22:05",
+        "slug_limited": "anis-hadj-moussa-2025-limited-1",
+        "slug_rare": "anis-hadj-moussa-2025-rare-1",
+        "slug_superrare": "anis-hadj-moussa-2025-super_rare-1",
+        "price_limited_eur": 8.68,
+        "price_rare_eur": 31.99,
+        "price_superrare_eur": 500.0
+      },
+      {
         "slug": "daniel-olmo-carvajal",
         "name": "Dani Olmo",
         "seal": "200",
@@ -34462,18 +34462,18 @@
         "price_superrare_eur": null
       },
       {
-        "slug": "anis-hadj-moussa",
-        "name": "Anis Hadj Moussa",
+        "slug": "justin-che",
+        "name": "Justin Che",
         "seal": "200",
         "seal_changed": 0,
         "previous_seal": "200",
-        "seal_change_date": "2026-03-16 09:22:05",
-        "slug_limited": "anis-hadj-moussa-2025-limited-1",
-        "slug_rare": "anis-hadj-moussa-2025-rare-1",
-        "slug_superrare": "anis-hadj-moussa-2025-super_rare-1",
-        "price_limited_eur": 8.85,
-        "price_rare_eur": 31.99,
-        "price_superrare_eur": 500.0
+        "seal_change_date": "2026-03-01 09:47:20",
+        "slug_limited": "justin-che-2025-limited-1",
+        "slug_rare": "justin-che-2025-rare-1",
+        "slug_superrare": "justin-che-2025-super_rare-1",
+        "price_limited_eur": 8.84,
+        "price_rare_eur": null,
+        "price_superrare_eur": 200.0
       },
       {
         "slug": "dominik-livakovic",
@@ -34543,7 +34543,7 @@
         "slug_superrare": "elia-caprile-2024-super_rare-1",
         "price_limited_eur": 9.0,
         "price_rare_eur": null,
-        "price_superrare_eur": 589.12
+        "price_superrare_eur": 594.88
       },
       {
         "slug": "marco-palestra",
@@ -34711,7 +34711,7 @@
         "slug_superrare": "dayotchanculle-upamecano-2024-super_rare-1",
         "price_limited_eur": 9.64,
         "price_rare_eur": 63.7,
-        "price_superrare_eur": 310.25
+        "price_superrare_eur": 534.72
       },
       {
         "slug": "yann-sommer",
@@ -34782,6 +34782,20 @@
         "price_limited_eur": 9.84,
         "price_rare_eur": 31.38,
         "price_superrare_eur": null
+      },
+      {
+        "slug": "marwin-hitz",
+        "name": "Marwin Hitz",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-02-08 09:48:29",
+        "slug_limited": "marwin-hitz-2021-limited-1",
+        "slug_rare": "marwin-hitz-2021-rare-1",
+        "slug_superrare": "marwin-hitz-2021-super_rare-1",
+        "price_limited_eur": 9.85,
+        "price_rare_eur": null,
+        "price_superrare_eur": 150.0
       },
       {
         "slug": "luis-angel-malagon-velazquez",
@@ -34894,20 +34908,6 @@
         "price_limited_eur": 10.11,
         "price_rare_eur": 38.67,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "yohei-takaoka",
-        "name": "Yohei Takaoka",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-02-20 10:00:33",
-        "slug_limited": "yohei-takaoka-2025-limited-1",
-        "slug_rare": "yohei-takaoka-2020-rare-1",
-        "slug_superrare": "yohei-takaoka-2020-super_rare-1",
-        "price_limited_eur": 10.21,
-        "price_rare_eur": 44.0,
-        "price_superrare_eur": 463.98
       },
       {
         "slug": "enzo-jeremias-fernandez",
@@ -35034,6 +35034,20 @@
         "price_limited_eur": 10.53,
         "price_rare_eur": 28.9,
         "price_superrare_eur": 281.66
+      },
+      {
+        "slug": "yohei-takaoka",
+        "name": "Yohei Takaoka",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-02-20 10:00:33",
+        "slug_limited": "yohei-takaoka-2025-limited-1",
+        "slug_rare": "yohei-takaoka-2020-rare-1",
+        "slug_superrare": "yohei-takaoka-2020-super_rare-1",
+        "price_limited_eur": 10.85,
+        "price_rare_eur": 44.0,
+        "price_superrare_eur": 463.98
       },
       {
         "slug": "virgil-van-dijk",
@@ -35330,6 +35344,20 @@
         "price_superrare_eur": 298.55
       },
       {
+        "slug": "iker-alvarez-de-eulate-molne",
+        "name": "Iker Álvarez",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-02-21 09:48:21",
+        "slug_limited": "iker-alvarez-de-eulate-molne-2021-limited-1",
+        "slug_rare": "iker-alvarez-de-eulate-molne-2021-rare-1",
+        "slug_superrare": "iker-alvarez-de-eulate-molne-2021-super_rare-1",
+        "price_limited_eur": 11.88,
+        "price_rare_eur": null,
+        "price_superrare_eur": null
+      },
+      {
         "slug": "mamadou-sangare",
         "name": "Mamadou Sangaré",
         "seal": "200",
@@ -35382,20 +35410,6 @@
         "slug_rare": "yago-cariello-ribeiro-2025-rare-1",
         "slug_superrare": "yago-cariello-ribeiro-2025-super_rare-1",
         "price_limited_eur": 12.0,
-        "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "iker-alvarez-de-eulate-molne",
-        "name": "Iker Álvarez",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-02-21 09:48:21",
-        "slug_limited": "iker-alvarez-de-eulate-molne-2021-limited-1",
-        "slug_rare": "iker-alvarez-de-eulate-molne-2021-rare-1",
-        "slug_superrare": "iker-alvarez-de-eulate-molne-2021-super_rare-1",
-        "price_limited_eur": 12.05,
         "price_rare_eur": null,
         "price_superrare_eur": null
       },
@@ -35495,7 +35509,7 @@
         "slug_superrare": "guglielmo-vicario-2020-super_rare-1",
         "price_limited_eur": 12.79,
         "price_rare_eur": 58.4,
-        "price_superrare_eur": 531.56
+        "price_superrare_eur": 491.09
       },
       {
         "slug": "bradley-barcola",
@@ -35592,7 +35606,7 @@
         "slug_rare": "unai-simon-mendibil-2025-rare-1",
         "slug_superrare": "unai-simon-mendibil-2025-super_rare-1",
         "price_limited_eur": 13.5,
-        "price_rare_eur": 71.4,
+        "price_rare_eur": 71.3,
         "price_superrare_eur": 597.66
       },
       {
@@ -35649,7 +35663,7 @@
         "slug_superrare": "gabriel-dos-santos-magalhaes-2019-super_rare-1",
         "price_limited_eur": 13.81,
         "price_rare_eur": 62.54,
-        "price_superrare_eur": 797.25
+        "price_superrare_eur": 800.0
       },
       {
         "slug": "orkun-kokcu",
@@ -35664,6 +35678,20 @@
         "price_limited_eur": 14.35,
         "price_rare_eur": 66.65,
         "price_superrare_eur": 325.0
+      },
+      {
+        "slug": "ruben-diogo-da-silva-neves",
+        "name": "Rúben Neves",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-02-08 09:51:37",
+        "slug_limited": "ruben-diogo-da-silva-neves-2022-limited-2",
+        "slug_rare": "ruben-diogo-da-silva-neves-2022-rare-1",
+        "slug_superrare": "ruben-diogo-da-silva-neves-2022-super_rare-1",
+        "price_limited_eur": 14.99,
+        "price_rare_eur": 38.99,
+        "price_superrare_eur": null
       },
       {
         "slug": "manuel-locatelli",
@@ -35983,7 +36011,7 @@
         "slug_limited": "khvicha-kvaratskhelia-2025-limited-1",
         "slug_rare": "khvicha-kvaratskhelia-2025-rare-1",
         "slug_superrare": "khvicha-kvaratskhelia-2025-super_rare-1",
-        "price_limited_eur": 17.5,
+        "price_limited_eur": 17.45,
         "price_rare_eur": 70.0,
         "price_superrare_eur": 428.95
       },
@@ -36011,7 +36039,7 @@
         "slug_limited": "anatolii-trubin-2025-limited-1",
         "slug_rare": "anatolii-trubin-2020-rare-1",
         "slug_superrare": "anatolii-trubin-2020-super_rare-1",
-        "price_limited_eur": 18.0,
+        "price_limited_eur": 17.95,
         "price_rare_eur": 58.99,
         "price_superrare_eur": null
       },
@@ -36041,7 +36069,7 @@
         "slug_superrare": "alisson-ramses-becker-2020-super_rare-1",
         "price_limited_eur": 18.0,
         "price_rare_eur": 99.01,
-        "price_superrare_eur": 831.04
+        "price_superrare_eur": 834.2
       },
       {
         "slug": "bart-verbruggen",
@@ -36083,7 +36111,7 @@
         "slug_superrare": "jean-butez-2020-super_rare-1",
         "price_limited_eur": 18.59,
         "price_rare_eur": 43.5,
-        "price_superrare_eur": 364.65
+        "price_superrare_eur": 366.32
       },
       {
         "slug": "endrick-felipe-moreira-de-sousa",
@@ -36198,20 +36226,6 @@
         "price_superrare_eur": 799.0
       },
       {
-        "slug": "ruben-diogo-da-silva-neves",
-        "name": "Rúben Neves",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-02-08 09:51:37",
-        "slug_limited": "ruben-diogo-da-silva-neves-2022-limited-2",
-        "slug_rare": "ruben-diogo-da-silva-neves-2022-rare-1",
-        "slug_superrare": "ruben-diogo-da-silva-neves-2022-super_rare-1",
-        "price_limited_eur": 20.0,
-        "price_rare_eur": 38.99,
-        "price_superrare_eur": null
-      },
-      {
         "slug": "sergio-arribas-calvo",
         "name": "Sergio Arribas",
         "seal": "200",
@@ -36236,7 +36250,7 @@
         "slug_rare": "jeppe-tverskov-2025-rare-1",
         "slug_superrare": "jeppe-tverskov-2025-super_rare-1",
         "price_limited_eur": 20.05,
-        "price_rare_eur": 135.91,
+        "price_rare_eur": 160.0,
         "price_superrare_eur": null
       },
       {
@@ -36265,7 +36279,7 @@
         "slug_superrare": "bukayo-saka-2025-super_rare-1",
         "price_limited_eur": 20.5,
         "price_rare_eur": 110.0,
-        "price_superrare_eur": 921.46
+        "price_superrare_eur": 924.62
       },
       {
         "slug": "fredrik-andre-bjorkan",
@@ -36310,6 +36324,20 @@
         "price_superrare_eur": null
       },
       {
+        "slug": "thibaut-courtois",
+        "name": "Thibaut Courtois",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2026-01-28 09:50:09",
+        "slug_limited": "thibaut-courtois-2025-limited-1",
+        "slug_rare": "thibaut-courtois-2020-rare-1",
+        "slug_superrare": "thibaut-courtois-2020-super_rare-1",
+        "price_limited_eur": 21.71,
+        "price_rare_eur": 116.5,
+        "price_superrare_eur": 775.53
+      },
+      {
         "slug": "vinicius-jose-paixao-de-oliveira-junior",
         "name": "Vinícius Júnior",
         "seal": "200",
@@ -36336,20 +36364,6 @@
         "price_limited_eur": 21.73,
         "price_rare_eur": 81.0,
         "price_superrare_eur": null
-      },
-      {
-        "slug": "thibaut-courtois",
-        "name": "Thibaut Courtois",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-01-28 09:50:09",
-        "slug_limited": "thibaut-courtois-2025-limited-1",
-        "slug_rare": "thibaut-courtois-2020-rare-1",
-        "slug_superrare": "thibaut-courtois-2020-super_rare-1",
-        "price_limited_eur": 21.79,
-        "price_rare_eur": 116.5,
-        "price_superrare_eur": 775.53
       },
       {
         "slug": "jonas-urbig",
@@ -36404,7 +36418,7 @@
         "slug_rare": "guilherme-augusto-vieira-dos-santos-2023-rare-1",
         "slug_superrare": "guilherme-augusto-vieira-dos-santos-2023-super_rare-1",
         "price_limited_eur": 23.9,
-        "price_rare_eur": 65.0,
+        "price_rare_eur": 64.47,
         "price_superrare_eur": null
       },
       {
@@ -36893,7 +36907,7 @@
         "slug_limited": "federico-dimarco-2021-limited-1",
         "slug_rare": "federico-dimarco-2020-rare-1",
         "slug_superrare": "federico-dimarco-2020-super_rare-1",
-        "price_limited_eur": 50.0,
+        "price_limited_eur": 49.51,
         "price_rare_eur": null,
         "price_superrare_eur": null
       },
@@ -36938,6 +36952,20 @@
         "price_limited_eur": 70.0,
         "price_rare_eur": 287.0,
         "price_superrare_eur": 1000.0
+      },
+      {
+        "slug": "eduard-spertsyan",
+        "name": "Eduard Spertsyan",
+        "seal": "200",
+        "seal_changed": 0,
+        "previous_seal": "200",
+        "seal_change_date": "2025-08-09 15:59:53",
+        "slug_limited": "eduard-spertsyan-2021-limited-1",
+        "slug_rare": "eduard-spertsyan-2021-rare-1",
+        "slug_superrare": "eduard-spertsyan-2021-super_rare-1",
+        "price_limited_eur": 92.83,
+        "price_rare_eur": 95.0,
+        "price_superrare_eur": null
       },
       {
         "slug": "michael-olise",
@@ -37035,21 +37063,7 @@
         "slug_superrare": "dong-kyung-lee-2025-super_rare-1",
         "price_limited_eur": null,
         "price_rare_eur": null,
-        "price_superrare_eur": 377.09
-      },
-      {
-        "slug": "marwin-hitz",
-        "name": "Marwin Hitz",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2026-02-08 09:48:29",
-        "slug_limited": "marwin-hitz-2021-limited-1",
-        "slug_rare": "marwin-hitz-2021-rare-1",
-        "slug_superrare": "marwin-hitz-2021-super_rare-1",
-        "price_limited_eur": null,
-        "price_rare_eur": null,
-        "price_superrare_eur": 150.0
+        "price_superrare_eur": 380.8
       },
       {
         "slug": "bruno-dos-santos-nazario",
@@ -37105,20 +37119,6 @@
         "slug_superrare": "joaquim-henrique-pereira-silva-2021-super_rare-1",
         "price_limited_eur": null,
         "price_rare_eur": null,
-        "price_superrare_eur": null
-      },
-      {
-        "slug": "eduard-spertsyan",
-        "name": "Eduard Spertsyan",
-        "seal": "200",
-        "seal_changed": 0,
-        "previous_seal": "200",
-        "seal_change_date": "2025-08-09 15:59:53",
-        "slug_limited": "eduard-spertsyan-2021-limited-1",
-        "slug_rare": "eduard-spertsyan-2021-rare-1",
-        "slug_superrare": "eduard-spertsyan-2021-super_rare-1",
-        "price_limited_eur": null,
-        "price_rare_eur": 95.0,
         "price_superrare_eur": null
       },
       {
